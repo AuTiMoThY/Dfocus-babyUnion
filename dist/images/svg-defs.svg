@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="svgicon hidden">
+<defs>
+<symbol id="shape-triangle_right" viewBox="0 0 33.126 39.225" class="">
+	<path fill="#FCE784" stroke="#682718" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M12.292,0.822
+		c0,0,18.477,12.661,20.188,18.135S20.523,34.292,10.601,37.372c-5.943,1.844,0.691-13.789-6.791-23.875
+		C-0.126,8.193,9.29-1.374,12.292,0.822z"/>
+	<path fill="#F8F397" stroke="#682718" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M7.06,6.054
+		c0,0,18.477,12.661,20.188,18.135C28.958,29.664,16.983,35.481,7.06,38.56C-2.863,41.64-0.426,0.581,7.06,6.054z"/>
+</symbol>
+
+
+</defs>
+</svg>
