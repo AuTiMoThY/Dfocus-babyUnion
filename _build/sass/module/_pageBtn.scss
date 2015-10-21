@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+		pagesBtn
+\*------------------------------------*/
+$itemwh: 36px;
+$activeitemwh: 38px;
+$scale:1.1;
+
+%change_page {
+	color: #633d25;
+	font-family: $ff-CenturyGothic;
+	font-size: em(15px);
+	font-weight: bold;
+}
+
+.pages_btn {
+	height: 70px;
+	margin: 30px auto 0px;
+	text-align: center;
+	display: table;
+	ul {
+		// float: right;
+	}
+	li {
+		position: relative;
+		display: block;
+		// @include circle($itemwh);
+		// @include bg(#98c7d2);
+		// border: 1px solid #d8d8d8;
+		line-height: $itemwh - 4;
+		text-align: center;
+		float: left;
+		&.number {
+			position: relative;
+			@include circle($itemwh);
+			// background: #98c7d2;
+			border: 2px solid #fff;
+			margin-left: 0.8em;
+			&:nth-of-type(2) {
+				margin-left: 0;
+			}
+			&:after {
+				@include psudoClass;
+				@extend .pattern-circle1;
+				@include absolute(0, $L:0);
+			}
+			a {
+				position: relative;
+				z-index: 1;
+				display: block;
+				@include wh2;
+				line-height: $itemwh - 4;
+			}
+			&:hover {
+				// background: $normal_color;
+				// border: 2px solid $normal_color;
+				// @extend .pattern-circle2;
+				@include scale($scale);
+				a {
+					// color: #fff;
+				}
+				&:after {
+					@extend .pattern-circle2;
+					// @include psudoClass;
+					// @include triBtm($normal_color, 10px, 9px);
+					// position: absolute;
+					// bottom: -6px;
+					// left: 4px;
+				}
+			}
+		}
+		&.active {
+			@include scale($scale);
+			// background: $normal_color;
+			// border: 2px solid #fff;
+			&>a {
+				// color: #fff;
+			}
+			&:after {
+				@extend .pattern-circle2;
+			}
+		}
+		&:hover {
+		}
+		&.prev {
+			// width: auto;
+			// border: none;
+			// padding: 6px;
+			// background: none;
+			margin: 0 1.5em;
+			&>a {
+				
+				// @include triPrev($normal_color, 10px);
+				// display: inline-block;
+				.icon {
+					// @include bg-i(-47px, 0);
+					font-style: normal;
+				}
+				.txt {
+					@extend %change_page;
+				}
+			}
+			&:hover {
+				@include scale($scale);
+			}
+		}
+		//  下一頁
+		&.next {
+			// width: auto;
+			// border: none;
+			// padding: 6px;
+			// background: none;
+			margin: 0 1.5em;
+			&>a {
+				
+				// @include triNext($normal_color, 10px);
+				// display: inline-block;
+				.icon {
+					// @include wh($itemwh);
+					// @include rotate(180deg);
+					font-style: normal;
+				}
+				.txt {
+					@extend %change_page;
+				}
+			}
+			&:hover {
+				@include scale($scale);
+			}
+		}
+		.icon {
+			@include wh2(22 23);
+		}
+	}
+	.page_select {
+		width: auto;
+		// border: 1px solid $normal_color;
+		&:hover {
+			// background-color: $normal_color2;
+		}
+		select {
+			height: 25px;
+			width: auto;
+			background-color: #fff;
+			// border: 0;
+			cursor: pointer;
+			line-height: 30px;
+			font-weight: normal;
+			&:focus {
+				border-color: $normal_color2;
+			}
+		}
+	}
+	a {
+		display: block;
+		color: #fff;
+		font-size: em(15);
+		font-family: $normal_font;
+		font-weight: bolder;
+		// line-height: $itemwh;
+	}
+}
+
+

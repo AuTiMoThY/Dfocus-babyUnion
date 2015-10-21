@@ -1,0 +1,336 @@
+.pdt_page {
+	&-aside {
+		float: left;
+		width: 20%;
+		min-width: 228px;
+		&-hgroup {
+			position: relative;
+			width: 100%;
+			min-height: 100px;
+			&:before {
+				@include absolute(0, $L:-1em);
+				z-index: 12;
+				@extend .pattern-baby-aside;
+			}
+			&:after {
+				@include absolute($B:-37px);
+				z-index: 10;
+				@extend .pattern-paper_top;
+			}
+		}
+		h1 {
+			position: relative;
+			z-index: 9;
+			float: right;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		&-wrap {
+			position: relative;
+			z-index: 11;
+			padding-left: 2px;
+			padding-right: 7px;
+			margin-bottom: 1em;
+		}
+		&-container {
+			padding: 1em;
+			@include bg('bg-pdt_aside.png', 50%, 50%, repeat);
+			border-left: 2px solid rgba(#7a2500, 0.6);
+			border-right: 2px solid rgba(#7a2500, 0.6);
+			border-bottom: 2px solid rgba(#7a2500, 0.6);
+			box-shadow: 1px 1px 1px rgba(#623b22, .5);
+		}
+		&-hgroup2 {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			&:before {
+				@include psudoClass;
+				@extend .iconTxt-title-aside_news;
+				@include absolute();
+			}
+			h1 {
+				position: absolute;
+				width: 100%;
+			}
+		}
+		&-wrap2 {
+			position: relative;
+			z-index: 2;
+			padding: 0.5em 0.5em 5em;
+			margin-top: 150px;
+			background-color: #7b4525;
+			border: 2px solid #641e00;
+			border-radius: 10px;
+			&:after {
+				@include psudoClass;
+				@include absolute($B:-20px, $L:-13px);
+				@extend .pattern-squirrel;
+			}
+		}
+	}
+	&-list, &-cnt {
+		float: left;
+		width: 80%;
+		padding-left: 0.8em;
+		@media (max-width: $screen-md-max) {
+			width: 75%;
+		}
+	}
+	&-item {
+		width: 33%;
+		padding: 0 0.6em;
+		margin-bottom: 1.6em;
+		@media (max-width: $screen-md-max) {
+			width: 32%;
+			padding: 0 0.3em;
+		}
+		figcaption {
+			position: relative;
+			padding: 0.8em 0.3em;
+			&:after {
+				@include psudoClass;
+				@extend .pattern-bg-pdt_item;
+				@include absolute(0, 0, 0, 0);
+				z-index: 0;
+				margin: auto;
+			}
+		}
+	}
+	&-cnt {
+		&-wrap {
+			@include bg(rgba(#fff, 0.8));
+			padding: 1.5em;
+		}
+		.description {
+			position: relative;
+			padding: 0.6em 0;
+			margin: 3.6em auto;
+			@include bg(#f5eee4);
+			border: 1px solid #dfd9cf;
+			h2 {
+				@include absolute(-20px, $L:25px);
+			}
+			p {
+				padding-left: 120px;
+				color: $Grey_color1;
+				@include adjFontSize(13px);
+			}
+		}
+		&-btns {
+			margin: 2em auto;
+			text-align: center;
+		}
+	}
+}
+
+.pdt_item {
+	&-pic {
+		position: relative;
+		z-index: 1;
+		// border: 4px solid #fff;
+		@include bgRWD('null', 270, 270);
+		img {
+			border: 4px solid #fff;
+		}
+		&-hover {
+			@include absolute(0, 0);
+			@include wh2;
+			@include bg(rgba(#000, 0.4));
+			border: 4px solid #fff;
+			@include transition(all 0.3s ease-in-out);
+			@include opacity(0);
+			.iconTxt-more_info {
+				@include absolute(0, 0, 0, 0);
+				margin: auto;
+			}
+			&:after {
+				@include psudoClass;
+				@include absolute($B:0, $R:0);
+				@extend .iconTxt-add_cart;
+			}
+			.pdt_page-item:hover & {
+				@include opacity(1);
+			}
+		}
+	}
+	&-name {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 1.8em;
+		color: $normal_color;
+		@include adjFontSize(15px);
+		font-weight: bold;
+	}
+	&-price {
+		position: relative;
+		z-index: 1;
+		.txt-price1 {
+			margin-right: 0.3em;
+		}
+		.stars {
+			float: right;
+		}
+		.fa {
+			margin: 0 0.15em;
+			color: $logo_color1;
+		}
+	}
+	&-head {
+		h1 {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding: 0 0.3em 0.8em;
+		}
+	}
+	&-main_pic {
+		position: relative;
+		@include bgRWD('null', 500, 500);
+		margin-bottom: 0.6em;
+		img {
+			width: 100%;
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute(0, 0);
+			@include wh2;
+			border: 3px solid #eae0ce;
+		}
+	}
+	&-intro {
+		&-cnt {
+			color: #ec9429;
+			@include adjFontSize(13px);
+			&:before {
+				@include psudoClass;
+				@extend %introCntDot;
+			}
+			&:after {
+				@include psudoClass;
+				@extend %introCntDot;
+			}
+			p {
+				padding: 1em 0.3em;
+			}
+		}
+		&-price {
+			padding: 1em 0.3em;
+			li {
+				float: none;
+				width: 100%;
+				margin-bottom: 0.5em;
+				@extend .txt-3;
+				font-size: em(13);
+				line-height: 1.5;
+			}
+			.empty {
+				display: inline-block;
+				width: 55px;
+			}
+			.frm__field {
+				padding: 0.3em 0.5em;
+				width: 60px;
+			}
+		}
+	}
+	&-share {
+		li {
+			line-height: 25px;
+			@include oftype(1){
+				margin-right: 0.8em;
+			};
+		}
+	}
+}
+%introCntDot {
+	// @include absolute($L:0);
+	@extend .pattern-dot3;
+	width: 100% !important;
+}
+
+.pdt {
+	&-main_cate {
+		&-item {
+			position: relative;
+			width: 100%;
+			padding: 0.3em 0.8em;
+			margin-bottom: 0.8em;
+			&:before {
+				@include psudoClass;
+				@include absolute($L:0, $T:-10px);
+				@extend .pattern-line3;
+			}
+			@include oftype(1){
+				&:before {
+					display: none;
+				}
+			};
+			a {
+				display: block;
+				@include adjFontSize(15px, 1);
+				color: $normal_color;
+				&:hover {
+					font-weight: bold;
+					text-decoration: underline;
+				}
+			}
+			&.open {
+				&:after {
+					display: none;
+				}
+				.pdt-sub_cate {
+
+				}
+			}
+		}
+	}
+	&-sub_cate {
+		display: none;
+		position: relative;
+		// max-height: 0;
+		padding: 0.6em 0;
+		@include transition(all 0.3s ease-in-out);
+		&:before {
+			@include psudoClass;
+			@include absolute(0, $L:-24px);
+			z-index: 10;
+			@include wh2(204 100%);
+			@include bg('bg-pdt_aside2.png', 0, 0, repeat-y);
+			box-shadow: 1px 1px 2px rgba(#623b22, .5);
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute(-30px, -40px);
+			z-index: 11;
+			@extend .pattern-sticker;
+		}
+		&-list {
+			position: relative;
+			z-index: 12;
+			width: 100%;
+		}
+		&-item {
+			width: 100%;
+			padding: 0.3em 0;
+		}
+		a {
+			color: #fff;
+			@include adjFontSize(13px, 0.8);
+		}
+	}
+}
+
+.pdt_intro {
+	h2 {
+		margin: 0 auto 0.8em;
+	}
+}
+.pdt_specification {
+	h2 {
+		margin: 0 auto 0.8em;
+	}
+	&-editor {
+		@extend .txt-3;
+		@include adjFontSize(15px);
+	}
+}

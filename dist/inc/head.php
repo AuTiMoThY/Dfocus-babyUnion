@@ -11,6 +11,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 
 <link rel="stylesheet" href="<?php path_au('css'); ?>reset.css" />
+<link rel="stylesheet" href="<?php path_au('css'); ?>animate.css" />
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/ripples.css">
 <link rel="stylesheet" href="plugin/bootstrap-material-design/css/material.css">
 <link rel="stylesheet" href="plugin/fontAwesome/css/font-awesome.css">

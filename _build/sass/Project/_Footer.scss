@@ -1,0 +1,143 @@
+footer {
+	width: 100%;
+	&.global_ft {
+		position: relative;
+		min-height: 145px;
+		background-color: #7f4226;
+		// @include padding-leader(0.8);
+		overflow: hidden;
+		&:before {
+			@include psudoClass;
+			@include wh(100%, 94px);
+			@include bg('bg-footer_top.png', 0, 0, repeat);
+			// position: absolute;
+			// top: -2px;
+		}
+	}
+}
+
+.babyUnion {
+	&-inf {
+		position: relative;
+		padding-top: 1.6em;
+		padding-bottom: 1.2em;
+		background-color: #fcf8dd;
+		border: 4px solid #c36a01;
+		border-radius: 15px;
+		box-shadow: inset -3px 3px 1px rgba(#4d1b00, .6);
+		color: #5f2300;
+		ul {
+			position: relative;
+			z-index: 10;
+		}
+		li {
+			width: 100%;
+			margin-bottom: 0.8em;
+			font-size: em(15px);
+			line-height: 30px;
+			i {
+				margin-right: 0.6em;
+			}
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute($B:0, $R:0.8em);
+			@extend .pattern-chalk_eraser;
+		}
+		&:before {
+			@include psudoClass;
+			@include absolute(20px, $L:-270px);
+			z-index: 1;
+			@extend .pattern-baby_slide;
+		}
+	}
+	&-logo {
+		@include absolute(8px, 10px);
+		@include rotate(5deg);
+		.logo1 {
+			@include wh2(169 45);
+		}
+		.logo2 {
+			@include absolute(35px, 0);
+			@include wh2(146 43);
+		}
+	}
+}
+
+.footer {
+	&-wrapper {
+		width: 750px;
+		min-height: 170px;
+		margin: auto;
+	}
+	&-pattern {
+		// position: relative;
+
+	}
+}
+
+.sitemap {
+	position: relative;
+	width: 280px;
+	float: left;
+	margin-left: 2em;
+	&:after {
+		@include psudoClass;
+		@include absolute(20px, $R:-320px);
+		z-index: 1;
+		@extend .pattern-baby_books;
+	}
+	&-wrap {
+		position: relative;
+		z-index: 10;
+	}
+	h3 {
+		position: relative;
+		width: 100%;
+		margin-top: 0;
+		color: #fff;
+		font-family: $ff-CenturyGothic;
+		@include adjFontSize(21px);
+		font-weight: bolder;
+		text-align: center;
+		&:before {
+			@include psudoClass;
+			@extend .pattern-dot2;
+			@include absolute(0, $B:0);
+			margin: auto;
+			width: 80px !important;
+		}
+		&:after {
+			@include psudoClass;
+			@extend .pattern-dot2;
+			@include absolute(0, $B:0, $R:0);
+			margin: auto;
+			width: 80px !important;
+		}
+	}
+	li {
+		width: 100%;
+		float: none;
+		margin-bottom: 0.5em;
+	}
+	a {
+		color: #fff;
+		@include adjFontSize(15px);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.copyright {
+	@include rhythm-margins(1, 1.3);
+	color: #fff;
+	@include adjFontSize(13px);
+	font-weight: normal;
+	.designby {
+		@include opacity(0.3);
+		a {
+			color: #fff;
+		}
+	}
+}

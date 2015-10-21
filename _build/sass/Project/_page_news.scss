@@ -1,0 +1,35 @@
+.aside_news {
+	&-item {
+		height: 115px;
+		padding: 0.6em;
+		margin-bottom: 0.6em;
+		@include bg('bg-pdt_aside.png');
+		border-radius: 5px;
+		border: 1px solid #641e00;
+		@include transition(all 0.3s ease-in-out);
+		&:hover {
+			box-shadow: $boxShadowHover1;
+		}
+	}
+	&-date {
+		margin-bottom: 0.3em;
+		border-bottom: 1px solid #e8c679;
+		color: #662600;
+		letter-spacing: 1px;
+		@include adjFontSize(13px, 1);
+		font-weight: bold;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		&:after {
+			@include psudoClass;
+			@include wh2(100% 1);
+			background-color: #fff;
+		}
+	}
+	&-title {
+		height: 65px;
+		overflow: hidden;
+		color: $Grey_color1;
+		letter-spacing: 1px;
+		@include adjFontSize(15px, 0.9);
+	}
+}

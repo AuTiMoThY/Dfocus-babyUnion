@@ -7,6 +7,22 @@
 	<path fill="#F8F397" stroke="#682718" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M7.06,6.054
 		c0,0,18.477,12.661,20.188,18.135C28.958,29.664,16.983,35.481,7.06,38.56C-2.863,41.64-0.426,0.581,7.06,6.054z"/>
 </symbol>
+<symbol id="shape-tri_prev" viewBox="0 0 36.723 39.277" class="">
+	<path fill="#D8722E" stroke="#682718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M28.664,1.544c0,0-17,8.625-19.438,16.634c7.688,25.741,14.232,19.516,22.164,17.414C38.641,33.637,36.148-3.929,28.664,1.544z"/>
+
+	<path fill="#F8F397" stroke="#682718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M21.352,5.606c0,0-18.477,8.973-20.188,14.447c-1.711,5.475,10.264,14.98,20.188,18.059C31.274,41.192,28.837,0.132,21.352,5.606z"
+	/>
+</symbol>
+<symbol id="shape-tri_next" viewBox="0 0 34.126 40.225" class="">
+	<path fill="#D8722E" stroke="#682718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M12.792,1.322c0,0,18.477,12.661,20.188,18.135S21.023,34.792,11.101,37.872c-5.943,1.844,0.691-13.789-6.791-23.875
+	C0.374,8.693,9.79-0.874,12.792,1.322z"/>
+
+	<path fill="#F8F397" stroke="#682718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M7.56,6.554c0,0,18.477,12.661,20.188,18.135C29.458,30.164,17.483,35.981,7.56,39.06C-2.362,42.14,0.074,1.081,7.56,6.554z"/>
+</symbol>
 
 
 </defs>

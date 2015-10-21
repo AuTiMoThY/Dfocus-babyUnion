@@ -113,6 +113,20 @@ $temp_date = strtotime(date("Y.m.d"));
 		<div class="hot_news-pattern"></div>
 		<h2 class="hot_news-title iconTxt-title-hot_news hide_txt">最新消息  HOT NEWS</h2>
 		<div class="hot_news-wall">
+			<div class="hot_news-more">
+				<a href="" class="">
+				<i class="ib icons-cute_people animated"></i>
+				MORE
+				<i class="ib">
+					<svg class="icon svg_icon-triangle_right">
+					  <use xlink:href="#shape-triangle_right"></use>
+					</svg>
+					<svg class="icon svg_icon-triangle_right-more">
+					  <use xlink:href="#shape-triangle_right"></use>
+					</svg>
+				</i>
+				</a>
+			</div>
 			<div class="hot_news-container">
 				<div class="hot_news-block">
 					<ul class="hot_news-list cf">
@@ -136,7 +150,7 @@ echo "</a></li>";
 for ($i=0; $i < 6; $i++) { 
 ?>
 
-						<li class="hot_news-item col-md-6"><a href="" class="cf">
+						<li class="hot_news-item col-xs-6"><a href="" class="cf">
 							<div class="news-date txt-2 col-xs-2">
 								<span class="date-d">16</span><br><span class="date-ym">2015.10</span>
 							</div>

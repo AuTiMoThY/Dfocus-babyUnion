@@ -1,0 +1,205 @@
+$nav1W: 112;
+$nav2W: 116;
+$nav3W: 100;
+$nav4W: 95;
+$nav3MarginL: 8;
+$nav3MarginR: 13;
+$navWidth: $nav1W+$nav2W+$nav3W+$nav4W+$nav3MarginL+$nav3MarginR;
+
+$navItemMap:(
+(item1, $nav1W, 167, 'nav1.png'),
+(item2, $nav2W, 134, 'nav2.png'),
+(item3, $nav3W, 156, 'nav3.png'),
+(item4, $nav4W, 142, 'nav4.png'),
+             );
+
+$fullW: 1121;
+$trainW: 748;
+$logoW: 373-5;
+$searchW: 300;
+
+$locomotiveMg: 10;
+$trainWrapW:$trainW+$locomotiveMg+2;
+
+#top {
+	@include wh(100%, 0px);
+	@include bg(#000);
+}
+
+header {
+	&.global_hd {
+		position: relative;
+		z-index: 99;
+		@include wh(100%, 172px);
+		@include bg('bg-header.jpg', 50%, 50%);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+		// @include background-image(linear-gradient(#00a1e9, #0086d1));
+		.container {
+			height: 100%;
+		}
+	}// header.global_hd  END
+	&#logo {
+		@include relative($T:15px);
+		float: left;
+		width: percentage(($logoW) / $fullW);
+		max-width: 345px;
+		// @include wh(logo, png);
+		// @include absolute($T:15px, $L:0);
+		@media (max-width: $screen-md-max) {
+			top: 30px;
+			width: percentage(($logoW - 10) / $fullW);
+		}
+		a {
+			@include wh;
+			display: block;
+		}
+	}// header#logo  END
+}
+.train_wrap {
+	height: 100%;
+	width: percentage(($trainWrapW) / $fullW);
+	max-width: #{$trainWrapW}px;
+	float: right;
+}
+.main_nav {
+	position: relative;
+	width: percentage($navWidth / $trainWrapW);
+	max-width: #{$navWidth}px;
+	height: 100%;
+	// @include absolute($L:360px);
+}
+.quick_search {
+	position: relative;
+	display: inline-block;
+	// float: right;
+	width: percentage($searchW / $trainWrapW);
+	max-width: #{$searchW}px;
+	height: 100%;
+	margin-right: #{$locomotiveMg}px;
+}
+/*========================================================================*\
+		>>	main_nav
+\*========================================================================*/
+.main_nav {
+	ul {
+		@include wh2;
+	}
+	&-item {
+		position: relative;
+		height: 100%;
+		// @include VerticalAlign;
+		a, span {
+			display: block;
+		}
+		a, .wrap {
+			@include wh2;
+		}
+		@each $navItem, $w, $h, $bg in $navItemMap {
+			&.#{$navItem} {
+				width: percentage($w / $navWidth);
+				max-width: #{$w}px;
+				.main_nav-icon {
+					@include bgRWD($bg, $w, $h);
+				}
+			}
+		}
+		&.item3 {
+			margin: 0 percentage($nav3MarginR / $navWidth) 0 percentage($nav3MarginL / $navWidth);
+		}
+	}// .main_nav-item  END
+	&-icon {
+		@include absolute($B:6px);
+		display: block;
+	}
+	&-txt {
+		@include hide_txt;
+	}
+	// &-icon {
+	// 	height: 31px;
+	// 	margin-bottom: 0.5em;
+	// 	// @include transition(all 0.3s $easeInOutCubic);
+	// 	@each $navItem, $w, $x, $y in (item1, 34px, 0, 0),
+	// 								  (item2, 37px, -79px, 0),
+	// 								  (item3, 43px, -155px, 0),
+	// 								  (item4, 69px, -243px, 0),
+	// 								  (item5, 78px, -358px, 0),
+	// 								  (item6, 53px, -485px, 0) {
+	// 		.#{$navItem} & {
+	// 			width: #{$w};
+	// 			// @include bg('navIcon.png', $x, $y);
+	// 		}
+	// 	}
+	// }// .main_nav-icon  END
+}
+
+/*========================================================================*\
+		>>	sub_nav
+\*========================================================================*/
+ul.subNav {
+	@include absolute($L:-50px);
+	@include wh2(650 auto);
+	padding: 1.2em;
+	@include bg(rgba(#fffdf1, 0.9));
+	border: 3px solid $logo_color1;
+	border-radius: 15px;
+	box-shadow: inset 0 0 5px rgba(77, 27, 0, .6);
+	@include opacity(0);
+	visibility: hidden;
+	@include transition(all 0.3s ease-in-out);
+	&.open {
+		visibility: visible;
+		@include opacity(1);
+	}
+}
+.subNav {
+	&-item {
+		float: none;
+		position: relative;
+		width: 32%;
+		min-height: 30px;
+		margin-bottom: 0.6em;
+		padding-right: 0.6em;
+		@include adjFontSize(15px, 1);
+		&:before {
+			@include psudoClass;
+			@include absolute($B:0);
+			@extend .pattern-line2_hover;
+			@include transition(all 0.3s ease-out);
+			width: 0 !important;
+			margin: auto;
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute($B:0);
+			@extend .pattern-line2;
+		}
+		&:hover {
+			&:before {
+				width: 100% !important;
+			}
+		}
+	}
+	a {
+		color: $normal_color;
+		text-align: left;
+		&:hover {
+			color: darken($normal_color, 20%);
+		}
+	}
+}
+
+/*========================================================================*\
+		>>	search
+\*========================================================================*/
+.quick_search {
+	&-bg {
+		@include absolute($B:3px);
+		@include bgRWD('bg-search.png', 300, 186);
+	}
+	&-frm {
+		position: absolute;
+		display: none;
+	}
+}
+
+
