@@ -46,36 +46,32 @@
 <section class="act_banner">
 	<div class="container">
 		<div class="row">
-			<div class="pic">
-				<img src="<?php path_au('img', 'banner-act1.jpg'); ?>" alt="">
-			</div>
+		    <div id="slider" class="flexslider">
+		        <ul class="slides">
+		            <li><img src="<?php path_au('img', 'banner-act1.jpg'); ?>" alt=""></li>
+		            <li><img src="<?php path_au('img', 'banner-act2.jpg'); ?>" alt=""></li>
+		        </ul>
+		    </div>
+
+		</div>
+	</div>
+</section>
+<section class="small_banner">
+	<div class="container">
+		<div class="row">
+			<div class="pic"><img src="<?php path_au('img', 'banner_s.jpg'); ?>" alt=""></div>
 		</div>
 	</div>
 </section>
 <main class="index_page-main">
 <section class="best_seller container">
 	<div class="best_seller-wrapper">
-		<div class="best_seller-pattern"></div>
+		<div class="best_seller-pattern">
+			<img src="<?php path_au('img', 'btn-best_seller.png') ?>" alt="" class="" usemap="NextPrev">
+		</div>
 		<h2 class="best_seller-title iconTxt-title-best_seller hide_txt">熱銷商品 Best Seller</h2>
 		<ul class="best_seller-list cf">
 <?php
-function bestSellerItemTemp1() {
-echo "<li class=\"best_seller-item col-xs-4\"><a href=\"\" title=\"\">";
-echo "	<figure class=\"hint--bottom\" data-hint=\"ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)\">";
-echo "		<div class=\"best_seller-pic pic\">";
-echo "			<img src=\"".TEMP_IMG_PATH."tmp-pdt-1.jpg\" alt=\"ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)\" >";
-echo "		</div>";
-echo "		<figcaption>";
-echo "			<div class=\"best_seller-name txt-1\"><b>ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)</b></div>";
-echo "			<div class=\"best_seller-price\">";
-echo "				<span class=\"txt-price1 tdlt\">$33,500</span>";
-echo "				<span class=\"txt-price2 \"><b>$26,800</b></span>";
-echo "			</div>";
-echo "		</figcaption>";
-echo "	</figure>";
-echo "</a></li>";
-};
-
 // 顯示 9 則
 for ($i=0; $i < 9; $i++) {
 ?>
@@ -100,6 +96,24 @@ for ($i=0; $i < 9; $i++) {
 ?>
 
 		</ul>
+		<div class="best_seller-control">
+			<ul>
+				<li class="number active"><a href="" class="icons-slide_control hide_txt">1</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">2</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">3</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">4</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">5</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">6</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">7</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">8</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">9</a></li>
+				<li class="number"><a href="" class="icons-slide_control hide_txt">10</a></li>
+			</ul>
+			<map name="NextPrev">
+				<area shape="rect" coords="59, 104, 120, 138" href="" alt="NEXT">
+				<area shape="rect" coords="14, 148, 75, 180" href="" alt="PREV">
+			</map>
+		</div>
 	</div><!-- /.best_seller-wrapper  END  !!-->
 </section><!-- /.best_seller  END  !! -->
 
@@ -198,7 +212,18 @@ for ($i=0; $i < 6; $i++) {
 // -------------------------------
  include_once INC_PATH.'scriptfoot.php';
  ?>
-
+<script src="plugin/FlexSlider/jquery.flexslider.js"></script>
+<script>
+$(window).load(function() {
+    $('#slider').flexslider({
+		animation     : "fade",
+		controlNav    : true,
+		directionNav  : false,
+		animationLoop : true,
+		slideshow     : true
+    });
+});
+</script>
 <?php
 // -------------------------------
 // google analytics

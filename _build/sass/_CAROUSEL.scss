@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-$slider-pb: (620 / 1920) * 100%;
+$slider-pb: (550 / 1200) * 100%;
 
 .banner {
 	position: relative;
@@ -15,97 +15,19 @@ $slider-pb: (620 / 1920) * 100%;
 #slider {
 	overflow: hidden;
 	.slides {
-		// width: 100%;
-		// height: 0;
-		// padding-bottom: $slider-pb;
+		width: 100%;
+		height: 0;
+		padding-bottom: $slider-pb;
 		&>li {
-			// width: 100%;
-			// height: 0;
-			// padding-bottom: $slider-pb;
-			// @include background-size(cover);
-			// background-position:50% 50%;
-		}
-	}
-}
-//  方案二  Slider w/thumbnail controlNav pattern
-.flex-control-thumbs {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: $cnt_width;
-	height: 80px;
-	margin: auto;
-	@include bg(transparent);
-	li {
-		position: relative;
-		height: 70px;
-		margin: 0 5px;
-		&:before {
-			@include psudoClass;
-			position: absolute;
-			top: 0;
-			left: 0;
-			@include wh;
-			@include bg(rgba(#000, 0.6));
-		}
-		&.flex-active {
-			position: relative;
-			top: -5px;
-			&:before {
-				// @include opacity(0);
-				@include bg(transparent);
-				border: 3px solid #e60012;
-			}
-		}
-	}
-}
-
-
-//  方案一  Slider w/thumbnail slider
-#carousel {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: $cnt_width;
-	height: 80px;
-	margin: auto;
-	@include bg(transparent);
-	.slides {
-		position: absolute;
-		bottom: 0;
-		&>li {
-			position: relative;
-			height: 70px;
-			margin: 0 5px;
-			@include bg(50%, 50%);
+			width: 100%;
+			height: 0;
+			padding-bottom: $slider-pb;
 			@include background-size(cover);
-			transition: all 0.3s ease(in-quart);
-			&:before {
-				@include psudoClass;
-				position: absolute;
-				top: 0;
-				left: 0;
-				@include wh;
-				@include bg(rgba(#000, 0.6));
-				transition: all 0.3s ease(in-quart);
-			}
-			&.flex-active-slide {
-				position: relative;
-				top: -5px;
-				&:before {
-					// @include opacity(0);
-					@include bg(transparent);
-					border: 3px solid #e60012;
-				}
-			}
+			background-position:50% 50%;
 		}
 	}
-	.flex-viewport {
-		height: 100%;
-	}
 }
+
 
 
 // #hcarousel {
@@ -128,7 +50,7 @@ $slider-pb: (620 / 1920) * 100%;
 	border: 0;
 	// background-color: transparent;
 	// border-radius: 0;
-	// margin-bottom: 1em !important;
+	margin-bottom: 0 !important;
 	// @include box-shadow(none);
 	// .slides {
 	// 	width: 100%;
@@ -145,16 +67,22 @@ $slider-pb: (620 / 1920) * 100%;
 	// }
 }
 
-// .flex-control-nav {
-//   width: auto;
-//   // bottom: auto;
-//   // right: 118px;
-//   bottom: -18px;
-//   right: 0;
-//   z-index:20;
-//   position: absolute;
-//   text-align: center;
-// }
+.flex-control-nav {
+	@include absolute($B:1.5em, $L:0, $R:0);
+	width: auto;
+	z-index:20;
+	text-align: center;
+	a {
+		@extend .icons-slide_control;
+		&.flex-active {
+			@extend .slide_control-hover;
+			@include scale(1.1);
+		}
+		&:hover {
+			@include scale(1.1);
+		}
+	}
+}
 // .flex-direction-nav {
 // 	position: absolute;
 // 	bottom:20px;

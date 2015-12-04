@@ -50,6 +50,7 @@
 		<?php include_once INC_PATH.'pdt_page_aside.php'; ?>
 	</aside>
 	<div class="pdt_page-cnt">
+	<form action="">
 		<div class="pdt_page-cnt-wrap">
 			<section class="pdt_item-head cf">
 				<div class="col-xs-7">
@@ -84,26 +85,26 @@
 								上方小花為聲光設計，內建音樂及聲光效果 <br>
 								吊掛玩具可拆卸，可掛於其他地方</p>
 						</div>
-						<form action="">
-							<div class="pdt_item-intro-price">
-								<ul>
-									<li>商品編號：CHU99371</li>
-									<li>
-										商品原價：<span class="txt-price1 tdlt">NT$ 33,500</span>
-									</li>
-									<li>
-										折扣價： <b class="txt-price4">8</b> 折 <span class="txt-price3">NT$ <b class="txt-fz26">26,800</b></span><br><span class="empty"></span>( 現省NT$ <b class="txt-price4">6,700</b> )
-									</li>
-									<li>數量：<input type="number" name="" id="" class="frm__field"></li>
-								</ul>
-							</div>
-							<div class="pdt_item-intro-btns">
-								<button type="button" class="btn btn-addcart">
-									<span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
-								<button type="button" class="btn btn-plusgoods">
-									<span class="btn-inner iconTxt-btn-plusgoods hide_txt">限定加購商品</span></button>
-							</div>
-						</form>
+						<!-- <form action=""> -->
+						<div class="pdt_item-intro-price">
+							<ul>
+								<li>商品編號：CHU99371</li>
+								<li>
+									商品原價：<span class="txt-price1 tdlt">NT$ 33,500</span>
+								</li>
+								<li>
+									折扣價： <b class="txt-price4">8</b> 折 <span class="txt-price3">NT$ <b class="txt-fz26">26,800</b></span><br><span class="empty"></span>( 現省NT$ <b class="txt-price4">6,700</b> )
+								</li>
+								<li>數量：<input type="number" name="" id="" class="frm__field"></li>
+							</ul>
+						</div>
+						<div class="pdt_item-intro-btns">
+							<button type="button" class="btn btn-addcart">
+								<span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+							<button type="button" class="btn btn-plusgoods">
+								<span class="btn-inner iconTxt-btn-plusgoods hide_txt">限定加購商品</span></button>
+						</div>
+						<!-- </form> -->
 					</div>
 				</div>
 			</section>
@@ -136,11 +137,44 @@
 			</section>
 		</div><!-- /.pdt_page-cnt-wrap  END  !! -->
 		<div class="pdt_page-cnt-btns">
-		<form action="">
+		<!-- <form action=""> -->
 			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
-			<a href="" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
-		</form>
+			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
+		<!-- </form> -->
 		</div>
+		<div class="spacial_offers">
+			<hgroup>
+				<h3 class="iconTxt-title-spacial_offers hide_txt">加購商品</h3>
+			</hgroup>
+			<div class="spacial_offers-pattern"></div>
+			<div class="spacial_offers-block">
+			<!-- <form action=""> -->
+				<ul class="cf">
+					<li>
+						<div class="spacial_offers-info">
+							<div class="spacial_offers-pic pic col">
+								<img src="<?php path_au('tmp', 'tmp-pdt-2.jpg'); ?>" alt="">
+							</div>
+							<div class="spacial_offers-cnt col">
+								<h4 class="pdt_item-name">韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款</h4>
+								<p>雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊。</p>
+								<span class="txt-price1 tdlt">原價：NT$ 33,500</span><span>加購價：<span class="txt-price5">NT$26,800</span></span>
+							</div>
+						</div>
+						<div class="spacial_offers-addcart">
+							<input type="checkbox" name="" id="spacial_offers_001" class="spacial_offers-checkbox">
+							<label for="spacial_offers_001" class=""><span class="hide_txt">加購</span></label>
+						</div>
+					</li>
+				</ul>
+			<!-- </form> -->
+			</div>
+		</div>
+		<div class="pdt_page-cnt-btns">
+			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
+		</div>
+	</form>
 	</div>
 </div>
 

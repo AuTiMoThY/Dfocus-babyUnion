@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://localhost/20151013_baby/index.php</loc>
-        <lastmod>2015-10-21T09:08:02.000Z</lastmod>
+        <lastmod>2015-12-04T09:12:11.188Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/login.php</loc>
+        <lastmod>2015-11-26T11:16:51.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/member.php</loc>
+        <lastmod>2015-11-26T11:37:01.000Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product.php</loc>
-        <lastmod>2015-10-21T10:58:13.000Z</lastmod>
+        <lastmod>2015-12-04T09:20:58.264Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product_cnt.php</loc>
-        <lastmod>2015-10-21T13:21:39.000Z</lastmod>
+        <lastmod>2015-11-25T08:33:30.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/sitemap-xml.php</loc>
+        <lastmod>2015-10-30T09:31:52.000Z</lastmod>
     </url>
 </urlset>

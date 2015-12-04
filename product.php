@@ -62,10 +62,7 @@
 						<div class="pdt_item-name">(文字很多的情況)韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-5">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>
@@ -82,10 +79,7 @@
 						<div class="pdt_item-name">Proby波比 - PE無毒地墊(遊戲墊) 英語動物園 S </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-4">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>
@@ -102,10 +96,7 @@
 						<div class="pdt_item-name">ViVi Baby - Disney迪士尼小熊維尼學步車 </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-3">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>
@@ -123,10 +114,7 @@
 						<div class="pdt_item-name">ViVi Baby - Disney迪士尼小熊維尼學步車 </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-2">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>
@@ -143,10 +131,7 @@
 						<div class="pdt_item-name">Proby波比 - PE無毒地墊(遊戲墊) 英語動物園 S </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-1">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>
@@ -163,10 +148,7 @@
 						<div class="pdt_item-name">(文字很多的情況)韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) </div>
 						<div class="pdt_item-price">
 							<span class="txt-price1 tdlt">$33,500</span>
-							<span class="txt-price2 "><b>$26,800</b></span>
-							<div class="stars js-stars " data-star="stars-0">
-								<!-- <i class="fa fa-star"></i> -->
-							</div>
+							<span class="txt-price2_1 "><b>$26,800</b></span>
 						</div>
 					</figcaption>
 				</a></figure>

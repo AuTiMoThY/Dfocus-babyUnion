@@ -12,13 +12,11 @@
       $width 圖片寬 
       $high 圖片高 
     */  
-    imgcode(5,150,30);  
+    imgcode(4,105,35);  
   
     //imgcode的function  
   function imgcode($nums,$width,$high) {  
-         
-        //去除了數字0和1 字母小寫O和L，為了避免辨識不清楚  
-        $str = "23456789ABCDEFGHIJKLMNPQRSTUBWXYZ";  
+        $str = "1234567890";  
         $code = '';  
         for ($i = 0; $i < $nums; $i++) {  
             $code .= $str[mt_rand(0, strlen($str)-1)];  
@@ -28,7 +26,7 @@
   
         //建立圖示，設置寬度及高度與顏色等等條件  
         $image = imagecreate($width, $high);  
-        $black = imagecolorallocate($image, mt_rand(0, 200), mt_rand(0, 200), mt_rand(0, 200));  
+        $black = imagecolorallocate($image, mt_rand(0, 255), mt_rand(0, 255), mt_rand(0, 255));  
         $border_color = imagecolorallocate($image, 21, 106, 235);  
         $background_color = imagecolorallocate($image, 235, 236, 237);  
   
@@ -36,10 +34,10 @@
         imagefilledrectangle($image, 0, 0, $width, $high, $background_color);  
   
         //建立圖示邊框  
-        imagerectangle($image, 0, 0, $width-1, $high-1, $border_color);  
+        // imagerectangle($image, 0, 0, $width-1, $high-1, $border_color);  
   
         //在圖示布上隨機產生大量躁點  
-        for ($i = 0; $i < 80; $i++) {  
+        for ($i = 0; $i < 100; $i++) {  
             imagesetpixel($image, rand(0, $width), rand(0, $high), $black);  
         }  
          

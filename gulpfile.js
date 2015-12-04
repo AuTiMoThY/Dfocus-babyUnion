@@ -14,6 +14,8 @@ var changed = require('gulp-changed');
 var coffeelint = require("gulp-coffeelint");
 var coffee = require("gulp-coffee");
 var concat = require("gulp-concat");
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
 
 var paths = {
 buildImages: '_build/p2h/**/*.+(png|jpg|gif|svg)',
@@ -62,20 +64,25 @@ gulp.task('compass',function(){
         	console.log(err);
         })
         .pipe(gulp.dest('dist/css/'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minifyCss({
+            keepBreaks: true
+        }))
+        .pipe(gulp.dest('dist/css/'))
         .pipe(connect.reload());
 });
 
 gulp.task('html', function(){
 	gulp.src('*.+(html|php)')
 	.pipe(changed('*.+(html|php)'))
-	.pipe(notify({ message: 'html change' }))
+	// .pipe(notify({ message: 'html change' }))
 	.pipe(connect.reload());
 });
 
 gulp.task('inc', function(){
 	gulp.src(paths.inc)
 	.pipe(changed(paths.inc))
-	.pipe(notify({ message: 'inc change' }))
+	// .pipe(notify({ message: 'inc change' }))
 	.pipe(connect.reload());
 });
 

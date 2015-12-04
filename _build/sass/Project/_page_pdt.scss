@@ -34,7 +34,7 @@
 		}
 		&-container {
 			padding: 1em;
-			@include bg('bg-pdt_aside.png', 50%, 50%, repeat);
+			@include bg('bg-pdt_aside.png', 50%, 0%, repeat);
 			border-left: 2px solid rgba(#7a2500, 0.6);
 			border-right: 2px solid rgba(#7a2500, 0.6);
 			border-bottom: 2px solid rgba(#7a2500, 0.6);

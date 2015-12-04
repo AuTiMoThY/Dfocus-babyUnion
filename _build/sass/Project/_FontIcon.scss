@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-$icon-spacing: 1px;
-$icon-layout: horizontal;
+// $icon-spacing: 1px;
+// $icon-layout: horizontal;
 // @import "txt_img/*.png";
 // @import "txt_title/*.png";
 // @include all-txt_img-sprites;
@@ -25,8 +25,10 @@ $icon-layout: horizontal;
 // 		}
 // 	}
 // }
+$iconTxt-spacing: 1px;
+$iconTxt-layout: horizontal;
 $iconTxtMap:(
-title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info, add_cart, btn-add_cart, btn-plusgoods, btn-facebook, title-description, title-pdt_intro, title-pdt_specification, go_list
+title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info, add_cart, btn-add_cart, btn-plusgoods, btn-facebook, title-description, title-pdt_intro, title-pdt_specification, go_list, title-spacial_offers, add_cart2, title-member
              );
 
 @import "iconTxt/*.png";
@@ -41,7 +43,7 @@ title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info,
 }
 
 $patternMap:(
-dot1, line1, dot2, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, line2, line2_hover, baby-aside, paper_top, line3, sticker, bg-pdt_item, squirrel, circle1, circle2, dot3
+dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, rabbit
              );
 @import "pattern/*.png";
 @include all-pattern-sprites;
@@ -53,8 +55,10 @@ dot1, line1, dot2, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, line
 	}
 }
 
+$icons-spacing: 1px;
+// $icons-layout: horizontal;
 $iconsMap:(
-phone, fax, home, cute_people, home2
+phone, fax, home, cute_people, home2, poor_guy, pencil, slide_control
              );
 @import "icons/*.png";
 @include all-icons-sprites;
@@ -62,6 +66,32 @@ phone, fax, home, cute_people, home2
 	@each $name in $iconsMap {
 		&-#{$name} {
 			@include wh2(icons-sprite-width(#{$name}) icons-sprite-height(#{$name}));
+		}
+	}
+}
+
+$btnsMap:(
+fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, member2
+             );
+@import "btns/*.png";
+@include all-btns-sprites;
+.btns {
+	@each $name in $btnsMap {
+		&-#{$name} {
+			@include wh2(btns-sprite-width(#{$name}) btns-sprite-height(#{$name}));
+		}
+	}
+}
+
+$memberMap:(
+m_forget, m_login, m_register, title-change, title-modify, title-register
+             );
+@import "member/*.png";
+@include all-member-sprites;
+.member {
+	@each $name in $memberMap {
+		&-#{$name} {
+			@include wh2(member-sprite-width(#{$name}) member-sprite-height(#{$name}));
 		}
 	}
 }
@@ -85,17 +115,30 @@ phone, fax, home, cute_people, home2
 	&-5 {
 		color: $logo_color1;
 	}
+	&-6 {
+		color: #683705;
+		@include adjFontSize(15px, 1.2);
+	}
 	&-price1 {
 		color: #a6a6a6;
 	}
 	&-price2 {
 		color: #8e591b;
+		&_1 {
+			color: #cf0000;
+			font-weight: bold;
+			@include adjFontSize(20px);
+		}
 	}
 	&-price3 {
 		color: #4aaa9a;
 	}
 	&-price4 {
 		color: $logo_color1;
+	}
+	&-price5 {
+		color: #f1632d;
+		font-size: em(20);
 	}
 	&-fz26 {
 		font-size: em(26px);

@@ -1,0 +1,98 @@
+.spacial_offers {
+	position: relative;
+	hgroup {
+		position: relative;
+		z-index: 10;
+		&:before {
+			@include psudoClass;
+			margin: auto;
+			// @include absolute($L:-40px, $R:0);
+			@extend .pattern-p-so_title;
+		}
+	}
+	h3 {
+		margin: auto;
+		@include absolute(0, 0, $L:35px);
+	}
+	&-pattern {
+		@extend .pattern-fox;
+		@include absolute(35px, -350px, $L:0);
+		z-index: 12;
+		margin: auto;
+	}
+	&-block {
+		position: relative;
+		z-index: 11;
+		@include bg('bg-so.png', 0, 0, repeat);
+		padding: 1.4em 1.8em;
+		li {
+			position: relative;
+			width: 100%;
+			background-color: #fff;
+			border: 3px solid #eae0ce;
+			padding: 0.8em;
+			overflow: hidden;
+		}
+		.txt-price1 {
+			margin-right: 0.8em;
+		}
+		.txt-price5 {
+			font-weight: bold;
+		}
+	}
+	&-pic {
+		@include wh2(130);
+
+	}
+	&-cnt {
+		width: 550px;
+		padding-left: 1em;
+		@include adjFontSize(13px, 1.2);
+		text-align: justify;
+		h4 {
+			margin-top: 0;
+			margin-bottom: 0.6em;
+			line-height: 1;
+		}
+		p {
+			color: #595757;
+		}
+	}
+	&-addcart {
+		@extend .iconTxt-add_cart2;
+		@include absolute($R:0, $B:-26px);
+		&:after {
+			@extend .icons-poor_guy;
+			@include psudoClass;
+			@include absolute(15px, 8px);
+		}
+		label {
+			display: block;
+			@include wh2(50%);
+			@include absolute($B:35px, $R:15px);
+			z-index: 5;
+			&:after {
+				@include psudoClass;
+				@include absolute($B:-1px, $R:-7px);
+				@include wh2(22);
+				background-color: #fff;
+				border-radius: 5px;
+				border: 2px solid $logo_color1;
+			}
+		}
+	}
+	&-checkbox {
+		@include absolute($B:37px, $R:12px);
+		display: none;
+		&:checked {
+			// display: block;
+			+label:after {
+				content: '\2713';
+				color: $logo_color1;
+				text-align: center;
+				line-height: 22px;
+				font-weight: bold;
+			}
+		}
+	}
+}

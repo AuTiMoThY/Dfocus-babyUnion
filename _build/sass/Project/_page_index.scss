@@ -21,6 +21,11 @@
 	}
 }
 
+.small_banner {
+	height: 100px;
+	@include bg('bg1.jpg', 0, 0, repeat);
+}
+
 .index_page {
 	&-main {
 		@include bg('bg-best_sell.jpg', 50%, 0);
@@ -34,6 +39,16 @@
 		position: relative;
 		max-width: 860px;
 		margin: 5em auto;
+	}
+	&-pattern {
+		&:after {
+			@include psudoClass;
+			@include absolute($B:-110px, $L:-280px);
+			@extend .pattern-trees2;
+		}
+		img {
+			@include absolute($B:-110px, $R:-230px);
+		}
 	}
 	&-title {
 		@include absolute(25%, $L:-125px);
@@ -67,6 +82,40 @@
 		@include adjFontSize(13px, 1);
 		.txt-price1 {
 			margin-right: 0.8em;
+		}
+	}
+	&-control {
+		height: 50px;
+		margin: 1em auto 0px;
+		text-align: center;
+		display: table;
+		li {
+			position: relative;
+			display: block;
+
+			text-align: center;
+			float: left;
+			&.number {
+				position: relative;
+				@include circle(22);
+				border: 1px solid #fff;
+				margin-left: 0.8em;
+				a {
+					position: relative;
+					z-index: 1;
+					display: block;
+					@include wh2;
+				}
+				&:hover {
+					@include scale(1.1);
+				}
+			}
+			&.active {
+				@include scale(1.1);
+				&>a {
+					@extend .slide_control-hover;
+				}
+			}
 		}
 	}
 }

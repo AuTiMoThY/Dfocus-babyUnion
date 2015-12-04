@@ -1,0 +1,71 @@
+.frm {
+	&__wrap {
+		line-height: 1.2;
+		li {
+			width: 100%;
+			margin-bottom: 0.8em;
+		}
+		.empty {
+			width: 18%;
+			display: inline-block;
+		}
+	}
+	&__label {
+		display: inline-block;
+		width: 18%;
+		color: #683705;
+		font-size: 1em;
+		font-weight: bold;
+		&.empty {
+			width: 18%;
+		}
+	}
+	&__field {
+		display: inline-block;
+		width: 78%;
+		background-color: #fff;
+		padding: 0.5em 0.8em;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		@include box-shadow(inset 1px 1px 5px 0px rgba(#000, 0.2));
+		transition: all 0.3s ease-in-out;
+		color: #683705;
+		&:focus {
+			border: 1px solid $logo_color3;
+			@include box-shadow(inset 1px 1px 5px 0px rgba($normal_color1, 0.8), 0 0 3px rgba($logo_color3, 0.8));
+		}
+		.m_bd_signup + & {
+			width: 200px;
+		}
+		.captcha + & {
+			width: 200px;
+		}
+	}
+	&__radio {
+		+ .frm__label {
+			width: auto;
+		}
+		.frm__field + & {
+			margin-left: 1.2em;
+		}
+		.frm__label + & {
+			margin-left: 0.8em;
+		}
+	}
+	&__checkbox {
+
+	}
+	&__submit {
+		display: inline-block;
+	}
+}
+
+.agree {
+	.frm__checkbox {
+		@include wh2(18);
+		vertical-align: -1ex;
+	}
+	p {
+		width: 92%;
+	}
+}

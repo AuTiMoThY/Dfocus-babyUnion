@@ -41,7 +41,7 @@ array('id'=>17, 'name' => '戶外用品', 'sub' => $tmp_subpdt_arr),
 array('id'=>18, 'name' => '精選品牌', 'sub' => $tmp_subpdt_arr),
 array('id'=>19, 'name' => '居家用品居家用品居家用品居家用品居家用品居家用品', 'sub' => $tmp_subpdt_arr),
 array('id'=>20, 'name' => '汽車安全座椅系列汽車安全汽車安全座椅系列汽車安全', 'sub' => $tmp_subpdt_arr),
-array('id'=>21, 'name' => '熱門品牌熱門品牌熱門品牌')
+array('id'=>21, 'name' => '熱門品牌熱門品牌熱門品牌', 'sub' => '')
 );
 
 
@@ -67,7 +67,7 @@ class PageUrlAu {
 	public $member_order = "member_order.php";  // 訂單查詢
 	public $cart         = "cart.php";  // 購物車
 
-	// public $contact      = "contact.php"; // 聯絡我們
+	public $contact      = "contact.php"; // 聯絡我們
 	// public $terms        = "terms.php";  // 使用條款
 	// public $privacy      = "privacy.php";  // 隱私政策
 }

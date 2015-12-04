@@ -19,6 +19,10 @@ main {
 		@include bg('bg2.png', 0, 0, repeat);
 		padding-bottom: 2em;
 	}
+	&.member_page-main {
+		@include bg('bg3.png', 0, 0, repeat);
+		padding-bottom: 2em;
+	}
 	.page_path {
 		@include rhythm-padding(1.2);
 		color: $normal_color;

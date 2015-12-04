@@ -61,15 +61,12 @@ button {
 	&:active {
 		@include hover;
 	}
-	&-default.btn.btn {
-		padding: 0.5em 1.2em;
-		@include bg(#98c7d2);
-		color: #004f5b;
-		border: 1px solid #004f5b;
-		border-radius: 0;
+	&-style1 {
+		border: none;
+		border-radius: 20px;
+		box-shadow: 2px 2px 3px rgba(#000, 0.3);
 		&:hover {
-			background-color: #004f5b;
-			color: #fff;
+			box-shadow: $boxShadowHover1;
 		}
 	}
 	&-inner {
@@ -97,6 +94,7 @@ button {
 		position: relative;
 		display: block;
 		@include wh2(90% 48);
+		max-width: 300px;
 		margin: auto;
 		@include bg('bg-btn2.png', 50%, 50%, repeat);
 	}
@@ -115,3 +113,18 @@ button {
 		}
 	}
 }//.btn
+
+%member_btn_hover {
+	&:hover {
+		@include rotate(3deg);
+	}
+}
+
+.btns {
+	&-member1 {
+		@extend %member_btn_hover;
+	}
+	&-member2 {
+		@extend %member_btn_hover;
+	}
+}

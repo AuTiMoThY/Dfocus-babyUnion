@@ -1,0 +1,120 @@
+.login {
+	&-header {
+		height: 85px;
+		overflow: hidden;
+	}
+	&-block {
+		@include bg('bg-login.png', 0, 0, repeat);
+		padding: 1.8em 3em;
+		header {
+			position: relative;
+			p {
+				margin-left: 0.3em;
+			}
+		}
+		&-pattern {
+			position: relative;
+			@include wh2(100% 105);
+			@include bg('bg-login.png', 0, 0, repeat);
+			margin-bottom: 2em;
+			// overflow: hidden;
+			&:before {
+				@include psudoClass;
+				@include absolute($B:0, $L:0);
+				z-index: 10;
+				@include wh2;
+				@include bg('bg-underbrush.png', 50%, bottom);
+			}
+			.pattern {
+				&-tree_bee2 {
+					@include absolute($B:0, $L:290px);
+					z-index: 9;
+				}
+				&-trees {
+					@include absolute($B:0, $L:60px);
+					z-index: 11;
+				}
+				&-fox {
+					@include absolute(-15px, 60px);
+					z-index: 11;
+				}
+			}
+		}
+	}
+	&-sign_in {
+		position: relative;
+		padding-bottom: 2.8em;
+		margin-bottom: 2.8em;
+		// border-bottom: 1px dotted #602d01;
+		&:after {
+			@include psudoClass;
+			@include absolute($B:0);
+			@include wh2(100% 4);
+			@include bg('dot4.png', 0, 0, repeat);
+		}
+		.btns-fb_login {
+			@include absolute(0, $B:0, $R:1em);
+			margin: auto;
+		}
+	}
+	&-sign_up {
+		position: relative;
+		&:before {
+			@include psudoClass;
+			@include absolute($L:-1.5em, $T:1.8em);
+			@include wh2(3 90%);
+			@include bg('dot5.png', 0, 0, repeat);
+		}
+		.btns-fb_register {
+			@include absolute($R:20px, $B:20px);
+		}
+	}
+}
+
+.member {
+	&-wrap {
+		header {
+			position: relative;
+			height: 85px;
+			overflow: hidden;
+		}
+	}
+	&-menu {
+		@include absolute($B:0.6em, $R:0);
+		li {
+			position: relative;
+			margin-right: 1em;
+			&.active {
+				&:after {
+					@include psudoClass;
+					@include absolute(-15px, $R:-10px);
+					@extend .icons-pencil;
+				}
+			}
+		}
+	}
+	&-container {
+		@include bg('bg-member.png', 0, 0, repeat);
+		padding-top: 1.8em;
+	}
+	&-block {
+		padding: 0 1em 1.8em;
+		.col-md-6 {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+	}
+	&-modify {
+		position: relative;
+		&:after {
+			@include psudoClass;
+			@include absolute($R:0, $T:0);
+			@include wh2(3 100%);
+			@include bg('dot5.png', 0, 0, repeat);
+		}
+	}
+	&-pattern {
+		@include wh2(100% 105);
+		@include bg('bg-grassland.png', 50%, bottom);
+	}
+}
