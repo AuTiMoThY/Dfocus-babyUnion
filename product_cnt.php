@@ -66,12 +66,6 @@
 										<span class="btn-inner iconTxt-btn-facebook hide_txt">Facebook</span>
 									</button>
 								</li>
-								<li>
-									<span class="txt-4 ib">熱門度：</span>
-									<div class="stars js-stars ib txt-5" data-star="stars-1">
-										<!-- <i class="fa fa-star"></i> -->
-									</div>
-								</li>
 							</ul>
 						</div>
 					</div>
