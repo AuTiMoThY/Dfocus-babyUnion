@@ -50,8 +50,8 @@
 			<h1 class="iconTxt-title-member hide_txt">會員專區  MEMBER AREA</h1>
 			<div class="member-menu">
 				<ul class="cf">
-					<li class="active"><a href="" class="btns-member1 hide_txt">會員資料</a></li>
-					<li><a href="" class="btns-member2 hide_txt">訂單查詢</a></li>
+					<li class="active"><a href="javascript:void 0;" class="btns-member1 hide_txt">會員資料</a></li>
+					<li><a href="order.php" class="btns-member2 hide_txt">訂單查詢</a></li>
 				</ul>
 			</div>
 		</header>

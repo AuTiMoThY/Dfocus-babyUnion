@@ -89,14 +89,32 @@
 								<li>
 									折扣價： <b class="txt-price4">8</b> 折 <span class="txt-price3">NT$ <b class="txt-fz26">26,800</b></span><br><span class="empty"></span>( 現省NT$ <b class="txt-price4">6,700</b> )
 								</li>
+								<!-- 無庫存時不顯示  ↓↓↓ -->
+								<li>規格：<select name="" id="" class="frm__select">
+									<option value="">請選擇</option>
+									<option value="">規格1</option>
+									<option value="">規格2</option>
+								</select></li>
 								<li>數量：<input type="number" name="" id="" class="frm__field"></li>
+								<!-- 無庫存時不顯示  ↑↑↑ -->
+								<!-- 無庫存時顯示  ↓↓↓ -->
+								<li>
+									<input type="text" name="" id="" class="frm__field" placeholder="請輸入E-mail" style="width:100%;">
+								</li>
+								<!-- 無庫存時顯示  ↑↑↑ -->
 							</ul>
 						</div>
 						<div class="pdt_item-intro-btns">
+							<!-- 無庫存時不顯示  ↓↓↓ -->
 							<button type="button" class="btn btn-addcart">
 								<span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
 							<button type="button" class="btn btn-plusgoods">
 								<span class="btn-inner iconTxt-btn-plusgoods hide_txt">限定加購商品</span></button>
+							<!-- 無庫存時不顯示  ↑↑↑ -->
+							<!-- 無庫存時顯示  ↓↓↓ -->
+							<button type="button" class="btn btns-notice">
+								<span class="hide_txt">到貨通知</span></button>
+							<!-- 無庫存時顯示  ↑↑↑ -->
 						</div>
 						<!-- </form> -->
 					</div>
@@ -132,7 +150,9 @@
 		</div><!-- /.pdt_page-cnt-wrap  END  !! -->
 		<div class="pdt_page-cnt-btns">
 		<!-- <form action=""> -->
+			<!-- 無庫存時不顯示  ↓↓↓ -->
 			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+			<!-- 無庫存時不顯示  ↑↑↑ -->
 			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
 		<!-- </form> -->
 		</div>
@@ -165,7 +185,9 @@
 			</div>
 		</div>
 		<div class="pdt_page-cnt-btns">
+			<!-- 無庫存時不顯示  ↓↓↓ -->
 			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+			<!-- 無庫存時不顯示  ↑↑↑ -->
 			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
 		</div>
 	</form>

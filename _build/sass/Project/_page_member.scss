@@ -4,6 +4,7 @@
 		overflow: hidden;
 	}
 	&-block {
+		position: relative;
 		@include bg('bg-login.png', 0, 0, repeat);
 		padding: 1.8em 3em;
 		header {
@@ -68,6 +69,10 @@
 		.btns-fb_register {
 			@include absolute($R:20px, $B:20px);
 		}
+		form {
+			position: relative;
+			z-index: 10;
+		}
 	}
 }
 
@@ -99,6 +104,7 @@
 	}
 	&-block {
 		padding: 0 1em 1.8em;
+		margin-bottom: 4em;
 		.col-md-6 {
 			padding-left: 2em;
 			padding-right: 2em;
@@ -114,7 +120,66 @@
 		}
 	}
 	&-pattern {
+		position: relative;
 		@include wh2(100% 105);
 		@include bg('bg-grassland.png', 50%, bottom);
+		&:before {
+			@include psudoClass;
+			@include absolute($B:15px, $L:200px);
+			@extend .pattern-rabbit;
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute($B:25px, $R:100px);
+			@extend .pattern-trees3;
+		}
 	}
+	&-order {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+}
+
+.order_table {
+	width: 100%;
+	color: $normal_color;
+	@include adjFontSize(13px, 1.0);
+	th {
+		vertical-align: middle;
+		&.q {
+			@include bg('th_middle.png', 50%, 0, repeat);
+			span {
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+	tr {
+	}
+	td {
+		text-align: center;
+		&:not(.line) {
+			padding: 0.6em;
+		}
+	}
+	a {
+		color: $logo_color1;
+		text-decoration: underline;
+	}
+	.line {
+		height: 4px;
+		@include bg('dot4.png', 0, 50%, repeat);
+	}
+}
+
+.order_total {
+	@include wh2(130 40);
+	margin: 2em auto;
+	border-radius: 20px;
+	@include bg('bg-btn4.png', 50%, 50%);
+	color: #fff;
+	line-height: 40px;
+	font-size: em(13);
+	text-align: center;
+	box-shadow: 2px 2px 3px rgba(#000, 0.3);
 }

@@ -10,7 +10,11 @@
     </url>
     <url>
         <loc>http://localhost/20151013_baby/member.php</loc>
-        <lastmod>2015-11-26T11:37:01.000Z</lastmod>
+        <lastmod>2015-12-04T11:42:08.290Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/order.php</loc>
+        <lastmod>2015-12-04T11:26:05.973Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product.php</loc>
@@ -18,7 +22,7 @@
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product_cnt.php</loc>
-        <lastmod>2015-12-04T09:26:31.471Z</lastmod>
+        <lastmod>2015-12-04T09:57:27.576Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/sitemap-xml.php</loc>

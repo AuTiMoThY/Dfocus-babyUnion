@@ -1,21 +1,6 @@
 @charset "UTF-8";
 
-input[type="text"],
-input[type="password"],
-input[type="email"], 
-input[type="telephone"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea {
+.frm__field, .frm__select {
 	// display:block;
 	// max-width:500px;
 	// height: 30px;
@@ -40,58 +25,23 @@ textarea {
 	-webkit-transition:all 0.45s ease-in-out;
 	-moz-transition:all 0.45s ease-in-out;
 	transition:all 0.45s ease-in-out;
+	&:focus {
+		-webkit-box-shadow:0 0 5px #999;
+		-moz-box-shadow:0 0 5px #999;
+		box-shadow:0 0 5px #999;
+		border-color:#999;
+		background:#fafafa;
+		border-color:#999;
+		outline:none;
+	}
 }
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus, 
-input[type="telephone"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus{
-	-webkit-box-shadow:0 0 5px #999;
-	-moz-box-shadow:0 0 5px #999;
-	box-shadow:0 0 5px #999;
-	border-color:#999;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus, 
-input[type="telephone"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus{
-	background:#fafafa;border-color:#999;outline:none;
-}
+
+
 input[type="text"][disabled],input[type="email"]:focus,input[type="telephone"]:focus,input[type="password"][disabled],input[type="date"][disabled],input[type="datetime"][disabled],input[type="datetime-local"][disabled],input[type="month"][disabled],input[type="week"][disabled],input[type="email"][disabled],input[type="number"][disabled],input[type="search"][disabled],input[type="tel"][disabled],input[type="time"][disabled],input[type="url"][disabled],textarea[disabled]{
 	background-color:#ddd;
 }
 
 
-form input[type="text"], 
-form input[type="email"], 
-form input[type="password"],
-form input[type="telephone"],
-form textarea {
-
-}
 
 input, textarea, select {
 	color: #303030;

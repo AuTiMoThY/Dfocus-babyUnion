@@ -185,7 +185,7 @@
 	}
 	&-main_pic {
 		position: relative;
-		@include bgRWD('null', 500, 500);
+		@include bgRWD('pdt_comingsoon.jpg', 500, 500);
 		margin-bottom: 0.6em;
 		img {
 			width: 100%;
@@ -228,8 +228,24 @@
 				width: 55px;
 			}
 			.frm__field {
-				padding: 0.3em 0.5em;
+				// padding: 0.3em 0.5em;
 				width: 60px;
+			}
+			.frm__select {
+				// padding: 0.3em 0.5em;
+				width: 200px;
+			}
+			input[type*="number"] {
+				padding: 0 0 0 0.8em;
+				line-height: 2;
+			}
+		}
+		&-btns {
+			.btn {
+				width: 90%;
+				max-width: 300px;
+				margin: 0.3em auto;
+				display: block;
 			}
 		}
 	}

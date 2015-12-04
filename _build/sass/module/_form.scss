@@ -58,6 +58,9 @@
 	&__submit {
 		display: inline-block;
 	}
+	&__select {
+		@extend .frm__field;
+	}
 }
 
 .agree {

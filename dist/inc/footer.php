@@ -28,8 +28,8 @@
 					</ul>
 					<ul class="col-xs-4">
 						<li><a href="login.php">會員登入</a></li>
-						<li><a href="">會員資料</a></li>
-						<li><a href="">訂單查詢</a></li>
+						<li><a href="member.php">會員資料</a></li>
+						<li><a href="order.php">訂單查詢</a></li>
 						<li><a href="">購物車</a></li>
 					</ul>
 					<ul class="col-xs-4">

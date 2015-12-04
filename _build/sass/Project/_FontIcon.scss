@@ -26,7 +26,7 @@
 // 	}
 // }
 $iconTxt-spacing: 1px;
-$iconTxt-layout: horizontal;
+$iconTxt-layout: smart;
 $iconTxtMap:(
 title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info, add_cart, btn-add_cart, btn-plusgoods, btn-facebook, title-description, title-pdt_intro, title-pdt_specification, go_list, title-spacial_offers, add_cart2, title-member
              );
@@ -42,8 +42,10 @@ title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info,
 	}
 }
 
+$pattern-spacing: 1px;
+$pattern-layout: smart;
 $patternMap:(
-dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, rabbit
+dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, trees3, rabbit
              );
 @import "pattern/*.png";
 @include all-pattern-sprites;
@@ -71,7 +73,7 @@ phone, fax, home, cute_people, home2, poor_guy, pencil, slide_control
 }
 
 $btnsMap:(
-fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, member2
+fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, member2, notice
              );
 @import "btns/*.png";
 @include all-btns-sprites;
@@ -84,7 +86,7 @@ fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, m
 }
 
 $memberMap:(
-m_forget, m_login, m_register, title-change, title-modify, title-register
+m_forget, m_login, m_register, title-change, title-modify, title-register, txt-order1, txt-order2, txt-order3, txt-order4, txt-order5, txt-order6, txt-order7, txt-order8
              );
 @import "member/*.png";
 @include all-member-sprites;
