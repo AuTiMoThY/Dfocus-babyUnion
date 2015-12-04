@@ -1,0 +1,81 @@
+.cart {
+	&-wrap {
+		width: 100%;
+		header {
+			position: relative;
+			height: 230px;
+			margin-bottom: 5em;
+		}
+	}
+	&-container {
+		width: 100%;
+	}
+	&-block {
+		width: 100%;
+	}
+	&-title_cart {
+		margin: auto;
+	}
+	&-steps {
+		@include absolute($L:0, $B:0, $R:0);
+		margin: auto;
+	}
+	&-table {
+		width: 100%;
+		color: $normal_color;
+		@include adjFontSize(13px, 1.0);
+		th {
+			vertical-align: middle;
+			&.q {
+				@include bg('th_middle2.png', 50%, 0, repeat);
+				span {
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+		tr {
+		}
+		td {
+			text-align: center;
+			vertical-align: middle;
+			&:not(.line) {
+				padding: 0.8em 0.6em;
+			}
+		}
+		a {
+			color: $logo_color1;
+			text-decoration: underline;
+		}
+		.line {
+			height: 4px;
+			@include bg('dot4.png', 0, 50%, repeat);
+		}
+		.pdt-pic {
+			@include wh2(70);
+		}
+		.pdt-name {
+			width: 410px;
+			padding-left: 1em;
+		}
+		.amount {
+			width: 60px;
+			padding: 0 0 0 0.8em;
+			line-height: 29px;
+		}
+		.coupon {
+			width: 200px;
+			margin-left: 1em;
+			margin-right: 0.8em;
+		}
+	}
+	&-total {
+		li {
+			width: 100%;
+			line-height: 2;
+		}
+		.q {
+			padding-right: 8em;
+		}
+	}
+}

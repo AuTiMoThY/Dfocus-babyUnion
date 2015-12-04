@@ -112,6 +112,16 @@ button {
 			@include hover;
 		}
 	}
+	&-style3.btn.btn {
+		padding: 0.6em 0.8em;
+		border: 1px solid #641e00;
+		border-radius: 5px;
+		background-color: #f19474;
+		color: #641e00;
+	}
+	&.icons-remove {
+		border-radius: 0;
+	}
 }//.btn
 
 %member_btn_hover {
