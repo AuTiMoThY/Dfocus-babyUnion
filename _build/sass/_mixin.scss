@@ -205,7 +205,7 @@
 	 		&:first-of-type { @content; }
 	 	}
 	 	@else {
-			&:nth-of-type($num) { @content; }
+			&:nth-of-type(#{$num}) { @content; }
 	 	}
 	}
 	@else if $num == "odd" {

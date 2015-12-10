@@ -33,3 +33,99 @@
 		@include adjFontSize(15px, 0.9);
 	}
 }
+
+.news {
+	&-content {
+		position: relative;
+		width: 100%;
+		padding-top: 160px;
+		padding-bottom: 2.4em;
+		margin-bottom: 4em;
+		@include bg('bg-news_cnt.png', 0, 0, repeat);
+		border-radius: 5px;
+		header {
+			@include absolute(0.6em, $L:0);
+			z-index: 2;
+			width: 100%;
+			h1 {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		&-title {
+			@include absolute(2.5em, $L:350px);
+			@include wh2(500 110);
+			margin-top: 0;
+			margin-bottom: 0;
+			overflow: hidden;
+			font-weight: bold;
+		}
+		&-date {
+			position: relative;
+			@include absolute(22px, 1em);
+			.inner {
+				@include wh2(130 125);
+				padding-top: 23px;
+				padding-left: 7px;
+				color: #683705;
+				text-align: center;
+			}
+			.day {
+				font-size: em(54);
+			}
+			.yyyymm {
+				font-size: em(23);
+			}
+		}
+		&-art {
+			position: relative;
+			z-index: 1;
+			padding: 0 1.8em;
+			&-container {
+				background-color: rgba(#fff, 0.8);
+				padding: 0.4em;
+			}
+			&-block {
+				border: 3px dashed #ffcf48;
+				padding: 1.2em 1.6em;
+			}
+		}
+	}
+	&-list {
+		position: relative;
+		padding-top: 115px;
+		margin-bottom: 1em;
+		header {
+			@include absolute(0, $L:0);
+			z-index: 1;
+			width: 100%;
+			h1 {
+				margin: auto;
+			}
+		}
+		&-pattern {
+			@extend .pattern-rabbit2;
+			@include absolute(-21px, $L:300px);
+			z-index: 3;
+		}
+		&-container {
+			position: relative;
+			z-index: 2;
+			@include bg('bg-news_list.png', 0, 0, repeat);
+			border-radius: 5px;
+			padding: 2em 0.6em;
+			overflow: hidden;
+			&:after {
+				@include psudoClass;
+				@include absolute($B:0, $L:0);
+				z-index: 1;
+				@include wh2(100% 87);
+				@include bg('bg-underbrush.png', 50%, 0);
+			}
+			.pages_btn {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+}

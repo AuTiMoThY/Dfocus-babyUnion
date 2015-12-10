@@ -21,7 +21,7 @@ var paths = {
 buildImages: '_build/p2h/**/*.+(png|jpg|gif|svg)',
 sass: '_build/sass/**/*.scss',
 inc: 'dist/inc/**',
-js: 'dist/js/**/*.js',
+js: 'dist/js/*.js',
 coffeescript: '_build/coffeescript/*.coffee'
 };
 // gulp.task('webserver', function() {
@@ -96,7 +96,7 @@ gulp.task('js', function(){
 gulp.task('coffee', function () {
     gulp.src(paths.coffeescript) // path to your files
     .pipe(coffeelint()) // lint files
-    .pipe(coffeelint.reporter('fail')) // make sure the task fails if not compliant
+    // .pipe(coffeelint.reporter('fail')) // make sure the task fails if not compliant
     .pipe(concat('test.js')) // concat files
     .pipe(coffee()) // compile coffee
     // .pipe(uglify()) // minify files

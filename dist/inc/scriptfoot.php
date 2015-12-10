@@ -5,6 +5,6 @@
 <script src="<?php path_au('js'); ?>"></script>
 <script src="plugin/"></script>
 
-<script src="<?php path_au('js'); ?>test.js"></script>
+<script src="<?php path_au('js'); ?>au.js"></script>
 
 

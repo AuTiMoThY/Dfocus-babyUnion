@@ -19,6 +19,15 @@
 		&.empty {
 			width: 18%;
 		}
+		&.q {
+			width: auto !important;
+		}
+		+ .frm__radio {
+			margin-left: 1.2em;
+		}
+		@media print {
+			width: auto !important;
+		}
 	}
 	&__field {
 		display: inline-block;
@@ -60,6 +69,22 @@
 	}
 	&__select {
 		@extend .frm__field;
+	}
+	&__textarea {
+		display: inline-block;
+		vertical-align: top;
+		width: 78%;
+		background-color: #fff;
+		padding: 0.5em 0.8em;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		@include box-shadow(inset 1px 1px 5px 0px rgba(#000, 0.2));
+		transition: all 0.3s ease-in-out;
+		resize: none;
+		&:focus {
+			border: 1px solid $logo_color3;
+			@include box-shadow(inset 1px 1px 5px 0px rgba($normal_color1, 0.8), 0 0 3px rgba($logo_color3, 0.8));
+		}
 	}
 }
 

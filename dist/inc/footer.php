@@ -23,7 +23,7 @@
 					<ul class="col-xs-4">
 						<li><a href="">商品分類</a></li>
 						<li><a href="">品牌故事</a></li>
-						<li><a href="">最新消息</a></li>
+						<li><a href="news.php">最新消息</a></li>
 						<li><a href="">常見問題</a></li>
 					</ul>
 					<ul class="col-xs-4">

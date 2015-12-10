@@ -29,6 +29,7 @@
 .index_page {
 	&-main {
 		@include bg('bg-best_sell.jpg', 50%, 0);
+		overflow: hidden;
 	}
 }
 
@@ -92,12 +93,11 @@
 		li {
 			position: relative;
 			display: block;
-
 			text-align: center;
 			float: left;
 			&.number {
 				position: relative;
-				@include circle(22);
+				@include circle(22px);
 				border: 1px solid #fff;
 				margin-left: 0.8em;
 				a {

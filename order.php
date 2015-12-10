@@ -72,7 +72,7 @@
 					</tr>
 					<tr>
 						<td>&nbsp;</td>
-						<td data-cnt="訂單編號/日期"><a href="">201510100726069686</a><br>2015-10-01</td>
+						<td data-cnt="訂單編號/日期"><a href="order_cnt.php">201510100726069686</a><br>2015-10-01</td>
 						<td data-cnt="付款方式">刷卡一次付清</td>
 						<td data-cnt="使用優惠券">ABC12344321</td>
 						<td data-cnt="金額">18,124</td>
@@ -84,7 +84,7 @@
 					</tr><tr><td colspan="10" class="line"></td></tr>
 					<tr>
 						<td>&nbsp;</td>
-						<td data-cnt="訂單編號/日期"><a href="">201510100726069686</a><br>2015-09-25</td>
+						<td data-cnt="訂單編號/日期"><a href="order_cnt.php">201510100726069686</a><br>2015-09-25</td>
 						<td data-cnt="付款方式">轉帳匯款</td>
 						<td data-cnt="使用優惠券">ABC12344321</td>
 						<td data-cnt="金額">18,124</td>
@@ -96,7 +96,7 @@
 					</tr><tr><td colspan="10" class="line"></td></tr>
 					<tr>
 						<td>&nbsp;</td>
-						<td data-cnt="訂單編號/日期"><a href="">201510100726069686</a><br>2015-09-23</td>
+						<td data-cnt="訂單編號/日期"><a href="order_cnt.php">201510100726069686</a><br>2015-09-23</td>
 						<td data-cnt="付款方式">3期分期付款</td>
 						<td data-cnt="使用優惠券">ABC12344321</td>
 						<td data-cnt="金額">18,124</td>
@@ -108,7 +108,7 @@
 					</tr><tr><td colspan="10" class="line"></td></tr>
 					<tr>
 						<td>&nbsp;</td>
-						<td data-cnt="訂單編號/日期"><a href="">201510100726069686</a><br>2015-08-21</td>
+						<td data-cnt="訂單編號/日期"><a href="order_cnt.php">201510100726069686</a><br>2015-08-21</td>
 						<td data-cnt="付款方式">刷卡一次付清</td>
 						<td data-cnt="使用優惠券">ABC12344321</td>
 						<td data-cnt="金額">18,124</td>

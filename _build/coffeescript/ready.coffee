@@ -1,3 +1,6 @@
+
+
+
 $ ->
   tri1 = $('.hot_news-more svg.svg_icon-triangle_right')
   tri2 = $('.hot_news-more svg.svg_icon-triangle_right-more')
@@ -28,3 +31,5 @@ $ ->
         $(this).children('.pdt-sub_cate').hide()
       return
   return
+
+

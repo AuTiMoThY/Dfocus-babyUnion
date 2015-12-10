@@ -2,11 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://localhost/20151013_baby/cart_step1.php</loc>
-        <lastmod>2015-12-04T13:29:21.860Z</lastmod>
+        <lastmod>2015-12-08T10:33:10.814Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/cart_step2.php</loc>
+        <lastmod>2015-12-07T09:12:20.468Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/cart_step3.php</loc>
+        <lastmod>2015-12-08T09:40:25.510Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/cart_step4.php</loc>
+        <lastmod>2015-12-08T09:39:12.654Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/cart_system_guide.php</loc>
+        <lastmod>2015-12-07T10:44:56.817Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/error404.php</loc>
+        <lastmod>2015-12-08T14:48:55.825Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/index.php</loc>
-        <lastmod>2015-12-04T09:12:11.188Z</lastmod>
+        <lastmod>2015-12-08T13:22:43.346Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/login.php</loc>
@@ -17,8 +37,16 @@
         <lastmod>2015-12-04T11:42:08.290Z</lastmod>
     </url>
     <url>
+        <loc>http://localhost/20151013_baby/news.php</loc>
+        <lastmod>2015-12-08T14:08:46.490Z</lastmod>
+    </url>
+    <url>
         <loc>http://localhost/20151013_baby/order.php</loc>
-        <lastmod>2015-12-04T11:48:40.425Z</lastmod>
+        <lastmod>2015-12-08T08:43:46.165Z</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/20151013_baby/order_cnt.php</loc>
+        <lastmod>2015-12-08T08:52:26.473Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product.php</loc>
@@ -26,7 +54,7 @@
     </url>
     <url>
         <loc>http://localhost/20151013_baby/product_cnt.php</loc>
-        <lastmod>2015-12-04T09:57:27.576Z</lastmod>
+        <lastmod>2015-12-05T04:03:47.000Z</lastmod>
     </url>
     <url>
         <loc>http://localhost/20151013_baby/sitemap-xml.php</loc>

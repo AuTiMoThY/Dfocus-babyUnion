@@ -75,7 +75,7 @@
 // 顯示 9 則
 for ($i=0; $i < 9; $i++) {
 ?>
-			<li class="best_seller-item col-xs-4"><a href="" title="">
+			<li class="best_seller-item col-xs-4"><a href="product_cnt.php" title="">
 				<figure class="hint--bottom" data-hint="ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)">
 					<div class="best_seller-pic pic">
 						<img src="<?php path_au('tmp', 'tmp-pdt-1.jpg'); ?>" alt="ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)ABC Design - Zoom 雙人嬰幼兒手推車 (天空藍綠款)" >
@@ -146,7 +146,7 @@ $temp_date = strtotime(date("Y.m.d"));
 					<ul class="hot_news-list cf">
 <?php 
 function tempNewsItem() {
-echo "<li class=\"hot_news-item col-md-6\"><a href=\"\" class=\"cf\">";
+echo "<li class=\"hot_news-item col-md-6\"><a href=\"news.php\" class=\"cf\">";
 echo "	<div class=\"news-date txt-2 col-xs-2\">";
 echo "		<span class=\"date-d\">16</span><br><span class=\"date-ym\">2015.10</span>";
 echo "	</div>";
@@ -164,7 +164,7 @@ echo "</a></li>";
 for ($i=0; $i < 6; $i++) { 
 ?>
 
-						<li class="hot_news-item col-xs-6"><a href="" class="cf">
+						<li class="hot_news-item col-xs-6"><a href="news.php" class="cf">
 							<div class="news-date txt-2 col-xs-2">
 								<span class="date-d">16</span><br><span class="date-ym">2015.10</span>
 							</div>

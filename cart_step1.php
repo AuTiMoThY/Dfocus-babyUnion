@@ -51,8 +51,8 @@
 			<div class="cart-steps cart-step1 hide_txt">STEP1 確認商品清單</div>
 		</header>
 		<div class="cart-container">
-			<div class="cart-block cf">
-			<form action="">
+		<form action="dist/gotocart2.php" id="cart1Form">
+			<section class="cart-sec cf">
 				<table class="cart-table">
 					<tr>
 						<th width="19"><img src="<?php path_au('img', 'th_before2.png'); ?>" alt=""></th>
@@ -78,7 +78,7 @@
 						<td data-cnt="折扣價"><b>NT$ 423</b></td>
 						<td data-cnt="數量"><input type="number" name="" id="" class="frm__field amount" min="1" value="2"></td>
 						<td data-cnt="小計">NT$ 846</td>
-						<td data-cnt="刪除"><button type="button" class="icons-remove btn"></button></td>
+						<td data-cnt="刪除"><button type="button" class="icons-remove btn" onclick="removecart();"></button></td>
 						<td>&nbsp;</td>
 					</tr><tr><td colspan="10" class="line"></td></tr>
 
@@ -100,7 +100,7 @@
 						<td data-cnt="折扣價"><b>NT$ 18320</b></td>
 						<td data-cnt="數量"><input type="number" name="" id="" class="frm__field amount" min="1" value="1"></td>
 						<td data-cnt="小計">NT$ 18320</td>
-						<td data-cnt="刪除"><button type="button" class="icons-remove btn"></button></td>
+						<td data-cnt="刪除"><button type="button" class="icons-remove btn" onclick="removecart();"></button></td>
 						<td>&nbsp;</td>
 					</tr>
 
@@ -119,13 +119,16 @@
 						<td data-cnt="折扣價"><b>NT$ 800</b></td>
 						<td data-cnt="數量"><input type="number" name="" id="" class="frm__field amount" min="1" value="1"></td>
 						<td data-cnt="小計">NT$ 800</td>
-						<td data-cnt="刪除"><button type="button" class="icons-remove btn"></button></td>
+						<td data-cnt="刪除"><button type="button" class="icons-remove btn" onclick="removecart();"></button></td>
 						<td>&nbsp;</td>
 					</tr><tr><td colspan="10" class="line"></td></tr>
 
 					<tr class="cart-total">
 						<td colspan="3" class="text-left" style="padding-left:1.2em; vertical-align:top;">
-							使用優惠卷<input type="text" name="" id="" class="frm__field coupon" placeholder="請輸入優惠代碼"><button type="button" class="btn btn-style3">OK</button>
+							使用優惠卷
+							<input type="text" name="" id="" class="frm__field coupon" placeholder="請輸入優惠代碼"><button type="button" class="btn btn-style3">OK</button>
+							<!-- 使用優惠卷後顯示的文字 ↓↓↓ -->
+							<span class="txt-8">ABC12344321（滿1000元折100元遞增計算）</span>
 						</td>
 						<td colspan="5">
 							<ul class="cf">
@@ -151,9 +154,145 @@
 					</tr>
 
 				</table>
-			</form>
+			</section>
+
+			<section class="payment-sec mod-cartBlock">
+				<div class="mod-cartBlock-wrap">
+					<div class="mod-cartBlock-container">
+						<div class="mod-cartBlock-block">
+							<h2 class="cart-txt-paymentInfo hide_txt">付款資訊</h2>
+							<div class="payment-list">
+								<ul class="cf">
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment1" class="frm__radio"><label for="payment1" class="frm__label">刷卡一次付清</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		線上刷卡一次付清，可使用卡別<img src="<?php path_au('img', 'card.jpg'); ?>" alt=""><br>刷卡時需要輸入手機號碼，系統會傳驗證號碼簡訊至手機。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment2" class="frm__radio"><label for="payment2" class="frm__label">銀聯卡</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		銀聯卡一次付清<img src="<?php path_au('img', 'card1.jpg'); ?>" alt="">
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment3" class="frm__radio"><label for="payment3" class="frm__label">3期0利率</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		每期<span class="txt-8">NT$6,708</span>，分期除不盡餘數於第一期收取；提供 <b>中國信託</b> 信用卡刷卡分期服務。<br>
+		刷卡時需要輸入手機號碼，系統會傳驗證號碼簡訊至手機。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment4" class="frm__radio"><label for="payment4" class="frm__label">6期0利率</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		每期<span class="txt-8">NT$3,354</span>，分期除不盡餘數於第一期收取；提供 <b>中國信託</b> 信用卡刷卡分期服務。<br>
+		刷卡時需要輸入手機號碼，系統會傳驗證號碼簡訊至手機。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment5" class="frm__radio"><label for="payment5" class="frm__label">12期分期付款</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		每期<span class="txt-8">NT$1,778</span>，分期除不盡餘數於第一期收取，利率6%計算；提供 <b>中國信託</b> 信用卡刷卡分期服務。<br>
+		刷卡時需要輸入手機號碼，系統會傳驗證號碼簡訊至手機。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment6" class="frm__radio"><label for="payment6" class="frm__label">紅利折抵</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		提供 <b>中國信託</b> 信用卡紅利折抵服務。<br>
+		刷卡時需要輸入手機號碼，系統會傳驗證號碼簡訊至手機。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment7" class="frm__radio"><label for="payment7" class="frm__label">WebATM</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		需使用讀卡機，請備妥您的讀卡機與提款卡。
+	</div>
+</li>
+<li>
+	<div class="col-md-3">
+		<input type="radio" name="payment" id="payment8" class="frm__radio"><label for="payment8" class="frm__label">貨到付款</label>
+	</div>
+	<div class="col-md-9 payment-exp">
+		小奶娃提供新竹貨運貨到付款服務，需酌收代收手續費：<br>
+		購物未滿NT2,000元(不含NT2,000)酌收<span class="txt-8">NT$30</span>，購物滿NT2,000元酌收<span class="txt-8">NT$60</span>
+	</div>
+</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</form>
+
+		<!-- 未登入時顯示 ↓↓↓ -->
+		<section class="login-sec mod-cartBlock">
+			<div class="mod-cartBlock-wrap">
+				<div class="mod-cartBlock-container">
+					<div class="mod-cartBlock-block cf">
+						<div class="col-md-6">
+							<section class="login-sec-sign_in">
+								<header>
+									<h2 class="member-m_login hide_txt">會員登入</h2>
+									<button type="button" class="btns-fb_login btn-style1 hide_txt">FB 帳號登入</button>
+								</header>
+								<form action="cart_step1.php" class="frm__wrap">
+								<ul class="cf">
+									<li>
+										<label for="m_id" class="frm__label">會員帳號：</label>
+										<input type="text" name="" id="m_id" class="frm__field" placeholder="請輸入e-mail帳號">
+									</li>
+									<li>
+										<label for="m_pw" class="frm__label">會員密碼：</label>
+										<input type="text" name="" id="m_pw" class="frm__field" placeholder="請輸入您的密碼">
+									</li>
+									<li>
+										<label for="" class="empty"></label>
+										<button type="submit" class="btns-login frm__submit btn-style1 hide_txt">我要登入</button>
+										<a href="forget.php" class="tdu txt-9">忘記密碼了?</a>
+									</li>
+								</ul>
+								</form>
+							</section>
+						</div>
+						<div class="col-md-6">
+							<section class="login-sec-first_shopping">
+								<header>
+									<h2 class="member-first_shopping hide_txt">首次購物</h2>
+								</header>
+								<p class="txt-6">小奶娃提供首次購物免註冊功能，完成購物後，即成為會員！<br>請先確認上方商品清單，再點擊下方按鈕前往下一步。</p>
+							</section>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
+		<!-- 未登入時顯示 ↑↑↑ -->
+		<section class="btns">
+			<a href="product.php" class="btn-style1 q ib btns-shopping hide_txt">繼續選購</a>
+			<button type="button" class="btn-style1 q ib btns-next hide_txt" onclick="cart1FormSubmit();">下一步</button>
+		</section>
+		<section class="shopping_notes">
+			<h2 class="shopping_notes-title cart-shopping_notes hide_txt">購物須知</h2>
+			<p>我們提供多種付款方式，方便且快速讓您自由選購商品，詳細說明請見<a href="" class="tdu txt-5">常見問題 - 付款方式說明</a>。<br>您最在乎的商品出貨事宜，詳細說明請見<a href="" class="tdu txt-5">常見問題 - 出貨方式說明</a>。<br>小奶娃的退換貨機制，均符合消費者保護法規定，讓您安心選購，詳細說明請見<a href="" class="tdu txt-5">常見問題 -商品退換貨說明</a>。</p>
+		</section>
+		</div><!-- /.cart-container  END  !! -->
 	</div>
 </div>
 
@@ -173,7 +312,12 @@
 // -------------------------------
  include_once INC_PATH.'scriptfoot.php';
  ?>
+<script>
+function cart1FormSubmit(){
+	$("#cart1Form").submit();
+}
 
+</script>
 <?php
 // -------------------------------
 // google analytics

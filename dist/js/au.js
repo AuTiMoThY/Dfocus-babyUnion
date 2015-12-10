@@ -36,6 +36,14 @@ function isOpen($this, $thisClass) {
 	};
 }
 
+function addcart(){
+	alert("此商品已加入購物車");
+}
+
+function removecart(){
+	confirm("確定刪除此商品?");
+}
+
 $(function() {
 	$(".main_nav-item.item1").click(function(event) {
 		isOpen($(".js-subNav"), $(".js-subNav.open"))

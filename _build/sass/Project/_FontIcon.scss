@@ -45,7 +45,7 @@ title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info,
 $pattern-spacing: 1px;
 $pattern-layout: smart;
 $patternMap:(
-dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, trees3, rabbit
+dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, trees3, rabbit, rabbit2
              );
 @import "pattern/*.png";
 @include all-pattern-sprites;
@@ -73,7 +73,7 @@ phone, fax, home, cute_people, home2, poor_guy, pencil, slide_control, remove
 }
 
 $btnsMap:(
-fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, member2, notice
+fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, member2, notice, next, shopping, prev, confirm2, goOnlineTrading, goindex, print, goindex2
              );
 @import "btns/*.png";
 @include all-btns-sprites;
@@ -88,7 +88,7 @@ fb_login, fb_register, login, submit1, submit2, re_captcha, confirm1, member1, m
 $member-spacing: 1px;
 // $member-layout: horizontal;
 $memberMap:(
-m_forget, m_login, m_register, title-change, title-modify, title-register, txt-order1, txt-order2, txt-order3, txt-order4, txt-order5, txt-order6, txt-order7, txt-order8
+m_forget, m_login, m_register, title-change, title-modify, title-register, txt-order1, txt-order2, txt-order3, txt-order4, txt-order5, txt-order6, txt-order7, txt-order8, first_shopping
              );
 @import "member/*.png";
 @include all-member-sprites;
@@ -103,7 +103,7 @@ m_forget, m_login, m_register, title-change, title-modify, title-register, txt-o
 $cart-spacing: 1px;
 // $cart-layout: horizontal;
 $cartMap:(
-step1, step2, step3, step4, title_cart, txt-cart1, txt-cart2, txt-cart3, txt-cart4, txt-cart5, txt-cart6, spa_offer
+step1, step2, step3, step4, title_cart, txt-cart1, txt-cart2, txt-cart3, txt-cart4, txt-cart5, txt-cart6, spa_offer, txt-paymentInfo, shopping_notes, ordering_info, recipient_info, invoice_info, agree, system_guide, bg-result_title
              );
 @import "cart/*.png";
 @include all-cart-sprites;
@@ -111,6 +111,21 @@ step1, step2, step3, step4, title_cart, txt-cart1, txt-cart2, txt-cart3, txt-car
 	@each $name in $cartMap {
 		&-#{$name} {
 			@include wh2(cart-sprite-width(#{$name}) cart-sprite-height(#{$name}));
+		}
+	}
+}
+
+$news-spacing: 1px;
+// $news-layout: horizontal;
+$newsMap:(
+title-list, title-cnt, pattern-date
+             );
+@import "news/*.png";
+@include all-news-sprites;
+.news {
+	@each $name in $newsMap {
+		&-#{$name} {
+			@include wh2(news-sprite-width(#{$name}) news-sprite-height(#{$name}));
 		}
 	}
 }
@@ -136,9 +151,29 @@ step1, step2, step3, step4, title_cart, txt-cart1, txt-cart2, txt-cart3, txt-car
 	&-6 {
 		color: #683705;
 		@include adjFontSize(15px, 1.2);
+		&_1 {
+			color: #683705;
+			font-size: em(13);
+		}
 	}
 	&-7 {
 		color: #9a9a9a;
+	}
+	&-8 {
+		color: #cf0000;
+	}
+	&-8_1 {
+		color: #cf0000;
+		@include adjFont(13px, 1.2);
+	}
+	&-9 {
+		color: #b27b43;
+	}
+	&-10 {
+		color: #0a9c90;
+	}
+	&-11 {
+		color: #f8f397 !important;
 	}
 	&-price1 {
 		color: #a6a6a6;

@@ -68,6 +68,12 @@ button {
 		&:hover {
 			box-shadow: $boxShadowHover1;
 		}
+		&:active {
+			@include hover;
+		}
+		&.q {
+			border-radius: 30px;
+		}
 	}
 	&-inner {
 		margin: auto;

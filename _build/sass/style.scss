@@ -129,6 +129,8 @@
 
 // @import "project/_MOD";
 // @import "module/_notifications";
+@import "project/_mod_so"; // 加購商品
+@import "project/_mod_cartBlock"; // 購物流程框框
 
 // /*------------------------------------------------------------------------*\
 // /*------------------------------------------------------------------------*\
@@ -146,7 +148,6 @@
 @import "project/_page_index";
 @import "project/_page_pdt";
 @import "project/_page_news";
-@import "project/_page_so"; // 加購商品
 @import "project/_page_member"; // 會員
 @import "project/_page_cart"; // 購物車
 

@@ -8,6 +8,12 @@
 /*========================================================================*\
 		>>	layout main
 \*========================================================================*/
+$layoutBgMap:(
+(pdt_page, bg2),
+(member_page, bg3),
+(cart_page, bg4),
+(news_page, bg2)
+	);
 main {
 	&>.wrapper {
 		@include rhythm-padding(2.8, 1.8);
@@ -15,22 +21,23 @@ main {
 			@include padding-leader(1);
 		}
 	}
-	&.pdt_page-main {
-		@include bg('bg2.png', 0, 0, repeat);
-		padding-bottom: 2em;
+	@each $page, $bg in $layoutBgMap {
+		&.#{$page}-main {
+			@include bg('#{$bg}.png', 0, 0, repeat);
+			padding-bottom: 2em;
+		}
 	}
-	&.member_page-main {
-		@include bg('bg3.png', 0, 0, repeat);
-		padding-bottom: 2em;
-	}
-	&.cart_page-main {
-		@include bg('bg4.png', 0, 0, repeat);
-		padding-bottom: 2em;
-	}
+
 	.page_path {
 		@include rhythm-padding(1.2);
 		color: $normal_color;
 		@include adjFontSize(15px);
+	}
+}
+.error404_page {
+	background-color: #f56484;
+	&-main {
+		@include wh2;
 	}
 }
 section {

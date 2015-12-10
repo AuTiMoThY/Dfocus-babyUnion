@@ -37,6 +37,9 @@ header {
 		.container {
 			height: 100%;
 		}
+		@media print {
+			display: none;
+		}
 	}// header.global_hd  END
 	&#logo {
 		@include relative($T:15px);

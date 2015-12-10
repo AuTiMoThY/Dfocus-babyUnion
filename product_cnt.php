@@ -50,7 +50,7 @@
 		<?php include_once INC_PATH.'pdt_page_aside.php'; ?>
 	</aside>
 	<div class="pdt_page-cnt">
-	<form action="">
+	<form action="" id="addCartForm">
 		<div class="pdt_page-cnt-wrap">
 			<section class="pdt_item-head cf">
 				<div class="col-xs-7">
@@ -106,10 +106,11 @@
 						</div>
 						<div class="pdt_item-intro-btns">
 							<!-- 無庫存時不顯示  ↓↓↓ -->
-							<button type="button" class="btn btn-addcart">
+							<button type="button" class="btn btn-addcart" onclick="addcart()">
 								<span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
-							<button type="button" class="btn btn-plusgoods">
-								<span class="btn-inner iconTxt-btn-plusgoods hide_txt">限定加購商品</span></button>
+							<button type="button" id="gotoSpaOffer" class="btn btn-plusgoods">
+							<a href="#spacialOffers">
+								<span class="btn-inner iconTxt-btn-plusgoods hide_txt">限定加購商品</span></a></button>
 							<!-- 無庫存時不顯示  ↑↑↑ -->
 							<!-- 無庫存時顯示  ↓↓↓ -->
 							<button type="button" class="btn btns-notice">
@@ -151,12 +152,12 @@
 		<div class="pdt_page-cnt-btns">
 		<!-- <form action=""> -->
 			<!-- 無庫存時不顯示  ↓↓↓ -->
-			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+			<button type="button" class="btn btn-addcart ib" onclick="addcart()"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
 			<!-- 無庫存時不顯示  ↑↑↑ -->
 			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
 		<!-- </form> -->
 		</div>
-		<div class="spacial_offers">
+		<div id="spacialOffers" class="spacial_offers">
 			<hgroup>
 				<h3 class="iconTxt-title-spacial_offers hide_txt">加購商品</h3>
 			</hgroup>
@@ -186,7 +187,7 @@
 		</div>
 		<div class="pdt_page-cnt-btns">
 			<!-- 無庫存時不顯示  ↓↓↓ -->
-			<button type="button" class="btn btn-addcart ib"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
+			<button type="button" class="btn btn-addcart ib" onclick="addcart()"><span class="btn-inner iconTxt-btn-add_cart hide_txt">加入購物車</span></button>
 			<!-- 無庫存時不顯示  ↑↑↑ -->
 			<a href="product.php" class="btn-go_list iconTxt-go_list ib hide_txt">返回列表</a>
 		</div>
@@ -211,43 +212,48 @@
  include_once INC_PATH.'scriptfoot.php';
  ?>
 <script>
-$(function() {
-	var star = "<i class=\"fa fa-star\"></i>";
-	var staro = "<i class=\"fa fa-star-o\"></i>";
-	var star0 = staro+staro+staro+staro+staro;
-	var star1 = star+staro+staro+staro+staro;
-	var star2 = star+star+staro+staro+staro;
-	var star3 = star+star+star+staro+staro;
-	var star4 = star+star+star+star+staro;
-	var star5 = star+star+star+star+star;
-	$('.js-stars').each(function(){
-		var starNum = $(this).data('star');
-		// console.log(starNum);
-		switch(starNum){
-			case "stars-0":
-				$(this).append(star0);
-				break;
-			case "stars-1":
-				$(this).append(star1);
-				break;
-			case "stars-2":
-				$(this).append(star2);
-				break;
-			case "stars-3":
-				$(this).append(star3);
-				break;
-			case "stars-4":
-				$(this).append(star4);
-				break;
-			case "stars-5":
-				$(this).append(star5);
-				break;
-			default:
-				$(this).append(star5);
-				break;
-		}
 
-	});
+$(function() {
+
+	$('#gotoSpaOffer').localScroll();
+	// var star = "<i class=\"fa fa-star\"></i>";
+	// var staro = "<i class=\"fa fa-star-o\"></i>";
+	// var star0 = staro+staro+staro+staro+staro;
+	// var star1 = star+staro+staro+staro+staro;
+	// var star2 = star+star+staro+staro+staro;
+	// var star3 = star+star+star+staro+staro;
+	// var star4 = star+star+star+star+staro;
+	// var star5 = star+star+star+star+star;
+	// $('.js-stars').each(function(){
+	// 	var starNum = $(this).data('star');
+	// 	// console.log(starNum);
+	// 	switch(starNum){
+	// 		case "stars-0":
+	// 			$(this).append(star0);
+	// 			break;
+	// 		case "stars-1":
+	// 			$(this).append(star1);
+	// 			break;
+	// 		case "stars-2":
+	// 			$(this).append(star2);
+	// 			break;
+	// 		case "stars-3":
+	// 			$(this).append(star3);
+	// 			break;
+	// 		case "stars-4":
+	// 			$(this).append(star4);
+	// 			break;
+	// 		case "stars-5":
+	// 			$(this).append(star5);
+	// 			break;
+	// 		default:
+	// 			$(this).append(star5);
+	// 			break;
+	// 	}
+
+	// });
+
+
 });
 </script>
 <?php

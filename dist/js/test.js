@@ -1,5 +1,5 @@
 (function() {
-  var isOpen, viewPortH, viewPortW, viewPortWH, viewPortWidthHeight;
+  var isOpen, root, viewPortH, viewPortW, viewPortWH, viewPortWidthHeight;
 
   viewPortWidthHeight = function() {
     var wh;
@@ -34,6 +34,24 @@
     } else {
       $thisClass.removeClass('open');
     }
+  };
+
+
+  /*
+   * function
+   */
+
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+
+  root.addcart = function(say) {
+    if (say == null) {
+      say = '此商品已加入購物車';
+    }
+    return alert(say);
+  };
+
+  root.removecart = function() {
+    return confirm('確定刪除此商品?');
   };
 
   $(function() {
