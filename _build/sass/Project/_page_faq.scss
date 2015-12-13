@@ -1,0 +1,137 @@
+.faq_page {
+	&-aside {
+		float: left;
+		width: 20%;
+	}
+	&-cnt {
+		float: left;
+		width: 80%;
+		padding-left: 2.4em;
+	}
+
+	&-aside {
+		&-block {
+			ul {
+				width: 190px;
+				margin: auto;
+			}
+			li {
+				position: relative;
+				width: 100%;
+				@include rhythm-padding(0.6);
+				padding-left: 1.8em;
+				padding-right: 1em;
+				line-height: 1.6;
+				&:before {
+					@include psudoClass;
+					@include absolute(0, $B:0, $L:0);
+					margin: auto;
+					@extend .icons-active;
+					@include opacity(0);
+					transition: all 0.3s ease-in-out;
+				}
+				&:after {
+					@include psudoClass;
+					@include absolute($B:0, $L:0);
+					@extend .pattern-line3;
+				}
+				&:hover, &.active {
+					&:before {
+						@include opacity(1);
+					}
+					a {
+						color: #f25a24;
+						font-weight: bold;
+					}
+				}
+			}
+			a {
+				display: block;
+				color: #582f15;
+			}
+		}
+	}
+
+	&-cnt {
+		&-wrap {
+			background-color: rgba(#fff, 0.8);
+		}
+		&-top {
+			padding: 1.8em;
+			&-block {
+				position: relative;
+				width: 100%;
+				min-height: 400px;
+				padding-top: 6em;
+				padding-bottom: 3em;
+				@include bg('bg-faq_top.png', 50%, 0, repeat);
+				border: 3px dashed #ffcf48;
+				h2 {
+					display: table;
+					padding-left: 60px;
+					padding-right: 50px;
+					margin-top: 0;
+					margin-bottom: 0;
+					@include absolute(-15px, $L:-20px);
+					color: #fff;
+					font-weight: bold;
+					letter-spacing: 1px;
+					vertical-align: middle;
+					.inner {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+				ul {
+					width: 50%;
+					margin: auto;
+				}
+				li {
+					width: 100%;
+					@include rhythm-padding(0.4);
+					&.active, &:hover {
+						a {
+							color: #f25a24;
+						}
+					}
+				}
+				a {
+					display: block;
+					color: #7b4525;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	&-list {
+		padding: 2em;
+	}
+	&-item {
+		header {
+			padding: 1.0em;
+			border-radius: 10px;
+			@include bg('bg-faq_item.png', 50%, 0);
+			background-size: cover;
+			h3 {
+				margin-top: 0;
+				margin-bottom: 0;
+				color: #595757;
+				font-weight: bold;
+				letter-spacing: 1px;
+			}
+		}
+		article {
+			position: relative;
+			padding: 1.3em 2em 1.8em;
+			margin-bottom: 2em;
+			color: #595757;
+			&:after {
+				@include psudoClass;
+				@include absolute($B:0);
+				@extend .pattern-line4;
+				margin: auto;
+			}
+		}
+	}
+}

@@ -39,6 +39,11 @@
  ?>
 
 <main class="pdt_page-main">
+<section class="small_banner container">
+	<div class="row">
+		<div class="pic"><img src="<?php path_au('img', 'banner_s.jpg'); ?>" alt=""></div>
+	</div>
+</section>
 <section class="page_path container">
 	 <div class="icons-home2 ib"></div>&nbsp;&nbsp;&gt;
 	 &nbsp;&nbsp;商品分類&nbsp;&nbsp;&gt;
@@ -56,6 +61,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-2.jpg'); ?>" alt="(文字很多的情況)韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊)">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>
@@ -73,6 +79,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-4.jpg'); ?>" alt="Proby波比 - PE無毒地墊(遊戲墊) 英語動物園 S">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>
@@ -90,6 +97,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-3.jpg'); ?>" alt="ViVi Baby - Disney迪士尼小熊維尼學步車">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>
@@ -108,6 +116,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-3.jpg'); ?>" alt="ViVi Baby - Disney迪士尼小熊維尼學步車">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>
@@ -125,6 +134,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-4.jpg'); ?>" alt="Proby波比 - PE無毒地墊(遊戲墊) 英語動物園 S">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>
@@ -142,6 +152,7 @@
 						<img src="<?php path_au('tmp', 'tmp-pdt-2.jpg'); ?>" alt="(文字很多的情況)韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款 原廠正品韓國Parklon帕龍 - 無毒四色地墊(遊戲墊)">
 						<div class="pdt_item-pic-hover">
 							<div class="iconTxt-more_info hide_txt">詳細資訊</div>
+							<div class="iconTxt-add_cart3 hide_txt">快點來看看</div>
 						</div>
 					</div>
 					<figcaption>

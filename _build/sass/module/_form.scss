@@ -1,3 +1,17 @@
+%frm_field_style {
+	background-color: #fff;
+	padding: 0.5em 0.8em;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	@include box-shadow(inset 1px 1px 5px 0px rgba(#000, 0.2));
+	transition: all 0.3s ease-in-out;
+	color: #683705;
+	&:focus {
+		border: 1px solid $logo_color3;
+		@include box-shadow(inset 1px 1px 5px 0px rgba($normal_color1, 0.8), 0 0 3px rgba($logo_color3, 0.8));
+	}
+}
+
 .frm {
 	&__wrap {
 		line-height: 1.2;
@@ -11,6 +25,7 @@
 		}
 	}
 	&__label {
+		position: relative;
 		display: inline-block;
 		width: 18%;
 		color: #683705;
@@ -25,6 +40,11 @@
 		+ .frm__radio {
 			margin-left: 1.2em;
 		}
+		.frm__contact & {
+			width: 100%;
+			display: block;
+			font-weight: normal;
+		}
 		@media print {
 			width: auto !important;
 		}
@@ -32,22 +52,15 @@
 	&__field {
 		display: inline-block;
 		width: 78%;
-		background-color: #fff;
-		padding: 0.5em 0.8em;
-		border-radius: 3px;
-		border: 1px solid #ccc;
-		@include box-shadow(inset 1px 1px 5px 0px rgba(#000, 0.2));
-		transition: all 0.3s ease-in-out;
-		color: #683705;
-		&:focus {
-			border: 1px solid $logo_color3;
-			@include box-shadow(inset 1px 1px 5px 0px rgba($normal_color1, 0.8), 0 0 3px rgba($logo_color3, 0.8));
-		}
+		@extend %frm_field_style;
 		.m_bd_signup + & {
 			width: 200px;
 		}
 		.captcha + & {
 			width: 200px;
+		}
+		.frm__contact & {
+			width: 355px;
 		}
 	}
 	&__radio {
@@ -74,16 +87,11 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 78%;
-		background-color: #fff;
-		padding: 0.5em 0.8em;
-		border-radius: 3px;
-		border: 1px solid #ccc;
-		@include box-shadow(inset 1px 1px 5px 0px rgba(#000, 0.2));
-		transition: all 0.3s ease-in-out;
+		@extend %frm_field_style;
 		resize: none;
-		&:focus {
-			border: 1px solid $logo_color3;
-			@include box-shadow(inset 1px 1px 5px 0px rgba($normal_color1, 0.8), 0 0 3px rgba($logo_color3, 0.8));
+		.frm__contact & {
+			width: 100%;
+			height: 180px;
 		}
 	}
 }

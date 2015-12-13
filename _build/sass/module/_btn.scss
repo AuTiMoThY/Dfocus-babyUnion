@@ -125,6 +125,25 @@ button {
 		background-color: #f19474;
 		color: #641e00;
 	}
+	&-style4 {
+		position: relative;
+		display: block;
+		margin: 1.5em auto;
+		&.btn.btn {
+			padding: 1em 3em;
+			border-radius: 10px;
+			background-color: #f96b47;
+			color: #fff;
+			&:hover {
+				background-color: darken(#f96b47, 20%);
+			}
+		}
+		&:after {
+			@include psudoClass;
+			@include absolute($R:-18px, $B:-8px);
+			@extend .icons-rabbit3;
+		}
+	}
 	&.icons-remove {
 		border-radius: 0;
 	}

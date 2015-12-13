@@ -12,7 +12,10 @@ $layoutBgMap:(
 (pdt_page, bg2),
 (member_page, bg3),
 (cart_page, bg4),
-(news_page, bg2)
+(news_page, bg2),
+(faq_page, bg2),
+(contact_page, bg6),
+(about_page, bg6)
 	);
 main {
 	&>.wrapper {
@@ -26,6 +29,9 @@ main {
 			@include bg('#{$bg}.png', 0, 0, repeat);
 			padding-bottom: 2em;
 		}
+	}
+	&.pdt_page-main {
+		@include padding-leader(1.6);
 	}
 
 	.page_path {

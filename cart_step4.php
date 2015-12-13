@@ -67,20 +67,6 @@
 				</div>
 			</section>
 
-			<!-- 貨到付款 轉帳匯款 訂購成功 -->
-			<section class="cart_result mod-resultBlock">
-				<div class="mod-resultBlock-wrap">
-					<div class="mod-resultBlock-container">
-						<div class="mod-resultBlock-block">
-							<h2 class="cart-bg-result_title txt-5">訂購成功</h2>
-							<p>感謝您的訂購，本站將會主動由系統發送訊息至您的電子信箱，<br>並請務必詳記本次訂單編號，以便後續查詢使用，<br>您亦可至「<a href="order.php" class="txt-5 tdu">會員專區 &gt; 訂單查詢</a>」查詢本訂單。</p>
-							<strong class="txt-8">201510100726069686</strong>
-							<p>若您使用<b>轉帳匯款</b>，請轉帳至「<b class="txt-10">中國信託銀行(822) / 中崙分行 /<br>戶名：小奶娃婦幼用品股份有限公司，帳號：093540083426</b>」，<br>確認付款後請利用「<a href="contact.php" class="txt-5 tdu">聯絡表單</a>」回覆您的訂單編號、匯款金額、帳號末五碼，以利核對作業，感謝您。</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<!-- 付款成功 -->
 			<section class="cart_result mod-resultBlock">
 				<div class="mod-resultBlock-wrap">

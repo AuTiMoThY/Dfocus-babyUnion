@@ -23,7 +23,11 @@
 
 .small_banner {
 	height: 100px;
-	@include bg('bg1.jpg', 0, 0, repeat);
+	// @include bg('bg1.jpg', 0, 0, repeat);
+	.pdt_page & {
+		
+		 // background-image: none;
+	}
 }
 
 .index_page {

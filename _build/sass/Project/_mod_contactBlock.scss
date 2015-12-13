@@ -1,0 +1,61 @@
+.mod-contactblock {
+	position: relative;
+	@include margin-trailer(5);
+	&-wrapper {
+		border-radius: 25px;
+		@include bg('bg-contactblock.png', 0, 0, repeat);
+		padding: 0.5em;
+	}
+	&-container {
+		border-radius: 25px;
+		box-shadow: inset 5px 5px 3px rgba(#000, 0.1);
+		background-color: #fff;
+		padding-top: 83px;
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+			@include absolute(-93px, $L:-55px);
+		}
+	}
+	&-block {
+		min-height: 500px;
+		padding: 0 2em 2em;
+		h3 {
+			display: table;
+			position: relative;
+			@include bg('bg-title1txt.png', 0, 0, repeat);
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 34px;
+			color: #683705;
+			font-weight: bolder;
+			&:before {
+				@include psudoClass;
+				@include absolute(0, $L:-15px);
+				@extend .contact-bg-title1before;
+			}
+			&:after {
+				@include psudoClass;
+				@include absolute($B:0px, $R:-15px);
+				@extend .contact-bg-title1after;
+			}
+			&.q {
+				@include bg('bg-title2txt.png', 0, 0, repeat);
+				&:before {
+					@extend .contact-bg-title2before;
+				}
+				&:after {
+					@extend .contact-bg-title2after;
+				}
+			}
+		}
+		p {
+			@include margin-trailer(1.2);
+			color: #683705;
+			@include adjFontSize(15px, 1.2);
+			&:first-child {
+				text-indent: 45px;
+			}
+		}
+	}
+}

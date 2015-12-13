@@ -23,11 +23,11 @@
 
 html, body {
 	min-height: 100%;
-	// min-width: $cnt_width;
+	// min-width: $container-lg;
 }
 
 body {
-	min-width: 980px;
+	min-width: $container-lg;
 	// @include bg('bg.jpg');
 	// @include background-size(cover);
 	// @include bg(scroll);

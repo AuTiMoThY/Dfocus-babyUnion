@@ -42,7 +42,7 @@ header {
 		}
 	}// header.global_hd  END
 	&#logo {
-		@include relative($T:15px);
+		@include relative($T:19px);
 		float: left;
 		width: percentage(($logoW) / $fullW);
 		max-width: 345px;
@@ -200,9 +200,116 @@ ul.subNav {
 		@include bgRWD('bg-search.png', 300, 186);
 	}
 	&-frm {
-		position: absolute;
-		display: none;
+		@include absolute($B:41px, $R:17px);
+		width: 185px;
+		.frm__field {
+			border-radius: 15px;
+			width: 100%;
+			padding: 0.3em 0.6em;
+		}
+		.frm__submit {
+			@include absolute(0, $B:0, $R:0.8em);
+			margin: auto;
+			@include wh2(21 19);
+		}
 	}
 }
 
 
+.float_menu {
+	position: fixed;
+	z-index: 999;
+	width: 99px;
+	margin-left: 1170px;
+	@include respondTo(Mscreen){
+		right: -112px;
+	};
+	header {
+		@include absolute(-161px, $L:-5px);
+	}
+	footer {
+		@include absolute($B:-21px, $L:-12px);
+		a {
+			@include wh2;
+		}
+	}
+	&-wrap {
+		border-right: 1px solid #481c02;
+	}
+	&-block {
+		background-color: #7b4525;
+		padding: 10px 0 90px;
+		ul {
+			width: 75px;
+			margin: auto;
+		}
+		li {
+			position: relative;
+			@include wh2(100% 75);
+			margin-bottom: 0.8em;
+			&:before {
+				@include psudoClass;
+				@include absolute(-2px, -2px);
+				z-index: 1;
+				@include wh2(75+4);
+				background-color: #fff497;
+				border-radius: 5px;
+				@include opacity(0);
+				transition: all 0.3s ease-out;
+			}
+			&:hover {
+				&:before {
+					@include opacity(1);
+				}
+				@for $i from 1 through 4 {
+					.icons-float#{$i} {
+						@extend .float#{$i}-hover;
+					}
+				}
+				.txt {
+					color: #fff497;
+				}
+			}
+		}
+		a {
+			position: relative;
+			z-index: 2;
+			display: table;
+			@include wh2;
+			vertical-align: middle;
+			background-color: #683705;
+			box-shadow: inset 2px 2px 3px rgba(#621200, 0.6);
+		}
+		.inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: #fff;
+		}
+		.txt {
+			display: block;
+			margin-top: 5px;
+		}
+		i {
+			display: block;
+			margin: auto;
+		}
+	}
+	&-ctrl {
+		display: none;
+		background-color: #7b4525;
+		@include absolute(20%, $L:-3em);
+		width: 3em;
+		padding: 0.6em 1.6em 0.6em 0.6em;
+		@include adjFontSize(15px, 0.8);
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			color: #fff497;
+			// background-color: darken(#7b4525, 20%);
+		}
+		@include respondTo(Mscreen){
+			display: block;
+		};
+	}
+}

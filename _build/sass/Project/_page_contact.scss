@@ -1,0 +1,103 @@
+.contact {
+	&-title_contact {
+		@include absolute($L:-45px, $R:0);
+		margin: auto;
+	}
+	&-btn_contactform, &-btn_trems, &-btn_privacy {
+		margin: 0 2.2em;
+	}
+	&-phone0287878586 {
+		// @include rhythm-margins(2);
+	}
+	&-wrap {
+		>header {
+			position: relative;
+			height: 190px;
+			margin-bottom: 3em;
+			ul {
+				display: table;
+				margin: auto;
+			}
+			a {
+				&:hover {
+					@include rotate(3deg);
+				}
+			}
+			.btns {
+				@include absolute($B:23px);
+				width: 100%;
+			}
+		}
+	}
+}
+
+.babyunion-info {
+	>* {
+		margin: 0 auto 2em;
+	}
+}
+
+.contactform {
+	@include rhythm-margins(5);
+	&-wrap {
+		position: relative;
+		border-radius: 25px;
+		border: 1px solid #ccc;
+		box-shadow: 1px 1px 5px rgba(#000, 0.1);
+		background-color: #fff;
+		&:before {
+			@include psudoClass;
+			@include absolute(-14px, $L:0);
+			@include wh2(100% 34);
+			@include bg('bg-contactblock-top.png', 63px, 0, repeat-x);
+		}
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+			@include absolute(-72px, $L:-64px);
+		}
+	}
+	&-container {
+		padding: 95px 2em 2em;
+	}
+	&-block {
+		min-height: 500px;
+		p {
+			padding-left: 90px;
+			color: #683705;
+			@include adjFontSize(15px, 1.1);
+		}
+	}
+}
+
+.frm__contact {
+	width: 100%;
+	margin-top: 1em;
+	table {
+		width: 100%;
+	}
+	tr {
+		border-bottom: 1px solid #ffa28a;
+		&:first-child {
+			border-top: 1px solid #ffa28a;
+		}
+	}
+	td {
+		padding: 1em;
+		vertical-align: middle;
+		&:first-child {
+			width: 33%;
+			background-color: #ffe3d5;
+		}
+	}
+	.required {
+		.frm__label {
+			&:after {
+				content: '※';
+				@include absolute($R:0);
+				color: #f96b47;
+				font-size: 1em;
+			}
+		}
+	}
+}

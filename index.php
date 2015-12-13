@@ -110,8 +110,8 @@ for ($i=0; $i < 9; $i++) {
 				<li class="number"><a href="" class="icons-slide_control hide_txt">10</a></li>
 			</ul>
 			<map name="NextPrev">
-				<area shape="rect" coords="59, 104, 120, 138" href="" alt="NEXT">
-				<area shape="rect" coords="14, 148, 75, 180" href="" alt="PREV">
+				<area shape="rect" coords="59, 104, 120, 138" href="javascript:void 0" alt="NEXT" onclick="alert('Next')">
+				<area shape="rect" coords="14, 148, 75, 180" href="javascript:void 0" alt="PREV" onclick="alert('Prev')">
 			</map>
 		</div>
 	</div><!-- /.best_seller-wrapper  END  !!-->

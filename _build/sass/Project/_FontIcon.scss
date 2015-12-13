@@ -28,7 +28,7 @@
 $iconTxt-spacing: 1px;
 $iconTxt-layout: smart;
 $iconTxtMap:(
-title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info, add_cart, btn-add_cart, btn-plusgoods, btn-facebook, title-description, title-pdt_intro, title-pdt_specification, go_list, title-spacial_offers, add_cart2, title-member
+title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info, add_cart, btn-add_cart, btn-plusgoods, btn-facebook, title-description, title-pdt_intro, title-pdt_specification, go_list, title-spacial_offers, add_cart2, title-member, add_cart3, title-faqaside
              );
 
 @import "iconTxt/*.png";
@@ -45,7 +45,7 @@ title-best_seller, title-hot_news, title-pdt_aside, title-aside_news, more_info,
 $pattern-spacing: 1px;
 $pattern-layout: smart;
 $patternMap:(
-dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, trees3, rabbit, rabbit2
+dot1, line1, dot2, line2, line2_hover, line3, line4, circle1, circle2, dot3, baby_slide, baby_books, chalk_eraser, giraffe, tree_bee, tree_bee2, baby-aside, paper_top, sticker, bg-pdt_item, squirrel, p-so_title, fox, trees, trees2, trees3, rabbit, rabbit2, board, level_crossing, gotop
              );
 @import "pattern/*.png";
 @include all-pattern-sprites;
@@ -60,7 +60,7 @@ dot1, line1, dot2, line2, line2_hover, line3, circle1, circle2, dot3, baby_slide
 $icons-spacing: 1px;
 // $icons-layout: horizontal;
 $iconsMap:(
-phone, fax, home, cute_people, home2, poor_guy, pencil, slide_control, remove
+phone, fax, home, cute_people, home2, poor_guy, pencil, slide_control, remove, active, rabbit3, float1, float2, float3, float4
              );
 @import "icons/*.png";
 @include all-icons-sprites;
@@ -126,6 +126,21 @@ title-list, title-cnt, pattern-date
 	@each $name in $newsMap {
 		&-#{$name} {
 			@include wh2(news-sprite-width(#{$name}) news-sprite-height(#{$name}));
+		}
+	}
+}
+
+$contact-spacing: 1px;
+// $contact-layout: horizontal;
+$contactMap:(
+title_contact, title-contact_form, title-privacy_policy, title-terms_of_use, babyunion, phone0287878586, info, btn_contactform, btn_privacy, btn_trems, bg-title1before, bg-title1after, bg-title2before, bg-title2after
+             );
+@import "contact/*.png";
+@include all-contact-sprites;
+.contact {
+	@each $name in $contactMap {
+		&-#{$name} {
+			@include wh2(contact-sprite-width(#{$name}) contact-sprite-height(#{$name}));
 		}
 	}
 }
@@ -246,5 +261,8 @@ title-list, title-cnt, pattern-date
 
 // }
 .svg_icon {
-
+	&-magnifier {
+		@include wh2(100%);
+		fill: #804e21;
+	}
 }

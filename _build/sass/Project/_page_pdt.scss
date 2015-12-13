@@ -73,9 +73,9 @@
 		float: left;
 		width: 80%;
 		padding-left: 0.8em;
-		@media (max-width: $screen-md-max) {
-			width: 75%;
-		}
+		// @media (max-width: $screen-md-max) {
+		// 	width: 75%;
+		// }
 	}
 	&-item {
 		width: 33%;
@@ -84,6 +84,14 @@
 		@media (max-width: $screen-md-max) {
 			width: 32%;
 			padding: 0 0.3em;
+		}
+		figure {
+			position: relative;
+			a {
+				// @include absolute;
+				// display: block;
+				// @include wh2;
+			}
 		}
 		figcaption {
 			position: relative;
@@ -94,6 +102,15 @@
 				@include absolute(0, 0, 0, 0);
 				z-index: 0;
 				margin: auto;
+			}
+			a {
+				display: block;
+				@include wh2;
+			}
+		}
+		&:hover {
+			.pdt_item-name {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -144,11 +161,24 @@
 				@include absolute(0, 0, 0, 0);
 				margin: auto;
 			}
-			&:after {
-				@include psudoClass;
+			.iconTxt-add_cart3 {
 				@include absolute($B:0, $R:0);
-				@extend .iconTxt-add_cart;
+				z-index: 20;
+				border: none;
+				background-color: transparent;
+
 			}
+			a {
+				display: block;
+				@include wh2;
+				@include absolute;
+				z-index: 10;
+			}
+			// &:after {
+			// 	@include psudoClass;
+			// 	@include absolute($B:0, $R:0);
+			// 	@extend .iconTxt-add_cart;
+			// }
 			.pdt_page-item:hover & {
 				@include opacity(1);
 			}
@@ -157,7 +187,7 @@
 	&-name {
 		position: relative;
 		z-index: 1;
-		margin-bottom: 1.8em;
+		padding-bottom: 1.8em;
 		color: $normal_color;
 		@include adjFontSize(15px);
 		font-weight: bold;
@@ -348,5 +378,17 @@
 	&-editor {
 		@extend .txt-3;
 		@include adjFontSize(15px);
+	}
+}
+
+
+.search_result {
+	@include bg('bg5.png');
+	border: 3px solid #cca18b;
+	@include rhythm-padding(0.8);
+	@include margin-trailer(1);
+	text-align: center;
+	.cnt {
+		color: #582f15;
 	}
 }

@@ -123,7 +123,11 @@
 			</section>
 			<section class="description">
 				<h2 class="iconTxt-title-description hide_txt">信用卡說明</h2>
-				<p>本商品信用卡分期付款價：<b class="txt-5">NT$920</b> / 期 <b class="txt-5">3</b> 期│ <b class="txt-5">NT$476</b> / 期 <b class="txt-5">6</b> 期　※除不盡餘數加至第一期<br>提供 <strong>中國信託</strong> 信用卡刷卡分期服務；提供信用卡紅利折抵（詳見<a href="" class="txt-5">紅利折抵接受銀行與折抵說明</a>） </p>
+				<p>本商品信用卡分期參考表：
+				<b class="txt-5">NT$8933</b> x3期<b class="txt-5">0</b>利率 │ 
+				<b class="txt-5">NT$4466</b> x6期<b class="txt-5">0</b>利率 │ 
+				<b class="txt-5">NT$2367</b> x12期 
+				※除不盡餘數加至第一期<br>提供 <strong>銀聯卡</strong> 刷卡服務；提供 <strong>中國信託</strong> 信用卡刷卡分期或紅利折抵服務（付款詳見<a href="" class="txt-5">常見問題 > 付款方式說明</a>） </p>
 			</section>
 			<section class="pdt_intro">
 				<h2 class="iconTxt-title-pdt_intro hide_txt">商品介紹</h2>
@@ -177,8 +181,40 @@
 							</div>
 						</div>
 						<div class="spacial_offers-addcart">
-							<input type="checkbox" name="" id="spacial_offers_001" class="spacial_offers-checkbox">
+							<input type="checkbox" name="spacial_offers" id="spacial_offers_001" class="spacial_offers-checkbox">
 							<label for="spacial_offers_001" class=""><span class="hide_txt">加購</span></label>
+						</div>
+					</li>
+					<li>
+						<div class="spacial_offers-info">
+							<div class="spacial_offers-pic pic col">
+								<img src="<?php path_au('tmp', 'tmp-pdt-2.jpg'); ?>" alt="">
+							</div>
+							<div class="spacial_offers-cnt col">
+								<h4 class="pdt_item-name">韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款</h4>
+								<p>雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊。</p>
+								<span class="txt-price1 tdlt">原價：NT$ 33,500</span><span>加購價：<span class="txt-price5">NT$26,800</span></span>
+							</div>
+						</div>
+						<div class="spacial_offers-addcart">
+							<input type="checkbox" name="spacial_offers" id="spacial_offers_002" class="spacial_offers-checkbox">
+							<label for="spacial_offers_002" class=""><span class="hide_txt">加購</span></label>
+						</div>
+					</li>
+					<li>
+						<div class="spacial_offers-info">
+							<div class="spacial_offers-pic pic col">
+								<img src="<?php path_au('tmp', 'tmp-pdt-2.jpg'); ?>" alt="">
+							</div>
+							<div class="spacial_offers-cnt col">
+								<h4 class="pdt_item-name">韓國Parklon帕龍 - 無毒四色地墊(遊戲墊) 經典馬卡龍色系款</h4>
+								<p>雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊，鄉村風格，配色柔和，上方小花為聲光設計，吊掛玩具可拆卸，可掛於其他地方，雙桿式遊戲墊。</p>
+								<span class="txt-price1 tdlt">原價：NT$ 33,500</span><span>加購價：<span class="txt-price5">NT$26,800</span></span>
+							</div>
+						</div>
+						<div class="spacial_offers-addcart">
+							<input type="checkbox" name="spacial_offers" id="spacial_offers_003" class="spacial_offers-checkbox">
+							<label for="spacial_offers_003" class=""><span class="hide_txt">加購</span></label>
 						</div>
 					</li>
 				</ul>

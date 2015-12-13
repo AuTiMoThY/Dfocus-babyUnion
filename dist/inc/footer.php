@@ -21,10 +21,10 @@
 				<h3>Site Map</h3>
 				<div class="sitemap-wrap cf">
 					<ul class="col-xs-4">
-						<li><a href="">商品分類</a></li>
-						<li><a href="">品牌故事</a></li>
+						<li><a href="product.php">商品分類</a></li>
+						<li><a href="about.php">品牌故事</a></li>
 						<li><a href="news.php">最新消息</a></li>
-						<li><a href="">常見問題</a></li>
+						<li><a href="faq.php">常見問題</a></li>
 					</ul>
 					<ul class="col-xs-4">
 						<li><a href="login.php">會員登入</a></li>
@@ -33,9 +33,9 @@
 						<li><a href="cart_step1.php">購物車</a></li>
 					</ul>
 					<ul class="col-xs-4">
-						<li><a href="">聯絡我們</a></li>
-						<li><a href="">使用條款</a></li>
-						<li><a href="">隱私政策</a></li>
+						<li><a href="contact.php#contactformSec">聯絡我們</a></li>
+						<li><a href="contact.php#tremsSec">使用條款</a></li>
+						<li><a href="contact.php#privacySec">隱私政策</a></li>
 					</ul>
 				</div>
 			</div>
