@@ -128,7 +128,7 @@
 			position: relative;
 			width: 100%;
 			padding-left: 1.4em;
-			@include rhythm-padding(1);
+			@include rhythm-padding(0.5);
 			&:after {
 				@include psudoClass;
 				@include absolute($B:0, $L:0);
@@ -220,7 +220,7 @@
 		width: 10%;
 	}
 	h2 + p {
-		@include absolute(2.8em, $L:190px);
+		@include absolute(0.2em, $L:190px);
 		color: #683705;
 		@include adjFontSize(13px);
 	}

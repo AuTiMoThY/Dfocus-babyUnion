@@ -3807,10 +3807,10 @@ footer.global_ft:before {
   position: relative;
   width: 100%;
   padding-left: 1.4em;
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 .payment-list li:after {
   content: '';
@@ -3916,7 +3916,7 @@ footer.global_ft:before {
 }
 .ordering_info h2 + p {
   position: absolute;
-  top: 2.8em;
+  top: 0.2em;
   left: 190px;
   color: #683705;
   font-size: 13px;

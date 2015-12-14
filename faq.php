@@ -70,7 +70,7 @@
 				<div class="faq_page-cnt-top-block">
 					<h2 class="pattern-board"><span class="inner">問題分類標題顯示於此</span></h2>
 					<ul id="gotoItem" class="cf">
-						<li class="active"><a href="#q1">Q1: 如何辦理退換貨?</a></li>
+						<li><a href="#q1">Q1: 如何辦理退換貨?</a></li>
 						<li><a href="#q2">Q2: 退款方式及退款時間?</a></li>
 						<li><a href="#q3">Q3: 未退回的退款，是否可直接折抵新訂單？</a></li>
 						<li><a href="#q4">Q4: 發票遺失是否仍能辦理退換貨？</a></li>

@@ -128,7 +128,7 @@ $temp_date = strtotime(date("Y.m.d"));
 		<h2 class="hot_news-title iconTxt-title-hot_news hide_txt">最新消息  HOT NEWS</h2>
 		<div class="hot_news-wall">
 			<div class="hot_news-more">
-				<a href="" class="">
+				<a href="news.php" class="">
 				<i class="ib icons-cute_people animated"></i>
 				MORE
 				<i class="ib">

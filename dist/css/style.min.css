@@ -729,7 +729,7 @@ footer.global_ft:before{content:'';display:block;width:100%;height:94px;backgrou
 }
 .payment-sec{margin-top:1.95rem;margin-bottom:1.95rem}
 .payment-sec h2{margin-left:2em}
-.payment-list li{position:relative;width:100%;padding-left:1.4em;padding-top:1.5rem;padding-bottom:1.5rem}
+.payment-list li{position:relative;width:100%;padding-left:1.4em;padding-top:.75rem;padding-bottom:.75rem}
 .payment-list li:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;height:3px;background:url(../images/dot6.png?1449324534)}
 .payment-list .frm__radio,.payment-list .frm__radio+.frm__label{display:inline-block;vertical-align:middle}
 .payment-list .frm__radio{margin-right:.6em}
@@ -749,7 +749,7 @@ footer.global_ft:before{content:'';display:block;width:100%;height:94px;backgrou
 .agree h2,.invoice_info h2,.ordering_info h2,.recipient_info h2{margin-bottom:1.3em}
 .agree .mod-cartBlock-block,.invoice_info .mod-cartBlock-block,.ordering_info .mod-cartBlock-block,.recipient_info .mod-cartBlock-block{padding:0 2em}
 .ordering_info .frm__label{width:10%}
-.ordering_info h2+p{position:absolute;top:2.8em;left:190px;color:#683705;font-size:13px;font-size:.8125rem;line-height:24px;line-height:1.5rem}
+.ordering_info h2+p{position:absolute;top:.2em;left:190px;color:#683705;font-size:13px;font-size:.8125rem;line-height:24px;line-height:1.5rem}
 .ordering_info p{width:78%}
 .recipient_info .frm__label{width:10%}
 .recipient_info .frm__checkbox+.frm__label{width:auto;font-weight:400}
